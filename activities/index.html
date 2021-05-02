@@ -3,15 +3,15 @@ layout: default.liquid
 title: Activities at the hub
 ---
 
-<h1 class="display-1 text-white">Selection of activities at the Hub</h1>
+<h1>Activities at the Hub</h1>
 <div class="cards">
 	{% for card in cards.11tydata %}
 
-	<div class="card">
+	<div class="card" style="background-image: url('{{ card.cardImg }}')">
 		<div class="card-title">{{ card.cardTitle }}</div>
 		<div class="card-contact">{{ card.cardContact }}</div>
 		<div class="photo">
-			<img src="{{ card.cardImg }}" alt="" />
+			<!-- <img src="{{ card.cardImg }}" alt="" /> -->
 		</div>
 		<div class="card-blurb">
 			<p>{{ card.cardBlurb }}</p>
