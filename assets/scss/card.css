@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  /* primary color block */
+  --primary-color-100: rgb(253, 252, 252);
+  --primary-color-300: hsl(240, 40%, 60%);
+  --primary-color-600: hsl(240, 60%, 30%);
+  --primary-color-900: hsl(240, 80%, 10%);
+  /* secondary color block */
+  --secondary-color-100: hsl(34, 30%, 30%);
+  --secondary-color-300: hsl(36, 40%, 60%);
+  --secondary-color-600: hsl(36, 60%, 30%);
+  --secondary-color-900: hsl(36, 80%, 10%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+}
+
+.photo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--primary-color-300);
+  text-align: center;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(/assets/images/cricket-ball.jpeg);
+  background-size: cover;
+  background-color: #1a4c1a;
+  background-blend-mode: overlay;
+  background-position: center;
+  width: 25rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  border: 2px solid var(--primary-color-300);
+  -webkit-box-shadow: 0 0 2px 2px var(--primary-color-300);
+          box-shadow: 0 0 2px 2px var(--primary-color-300);
+  margin: 1em 1em;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+.card-contact {
+  color: var(--primary-color-300);
+}
+
+.card-title {
+  color: var(--primary-color-100);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.card-blurb {
+  color: var(--primary-color-100);
+  padding: 2em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 2em;
+}
+
+nav a {
+  color: var(--primary-color-100);
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+}
+
+li + li {
+  margin-left: 1em;
+}
+/*# sourceMappingURL=card.css.map */
