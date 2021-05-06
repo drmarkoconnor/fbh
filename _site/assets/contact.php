@@ -20,7 +20,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "bookings@flaxbourtonhub.org";
+        $recipient = "admin@example.com";
 
         // Build the email content.
         $email_content = "Full Name: $name\n";
