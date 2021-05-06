@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   /* primary color block */
   --primary-color-100: rgb(253, 252, 252);
@@ -18,7 +18,17 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  width: 150px;
+}
+
+.container {
+  position: absolute;
+  top: 16vh;
+  z-index: -1;
 }
 
 .card img {
@@ -32,6 +42,7 @@ body {
 h1 {
   color: var(--primary-color-900);
   text-align: center;
+  z-index: -1;
 }
 
 .cards {
@@ -43,6 +54,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: -1;
 }
 
 .card {
@@ -124,14 +136,33 @@ h1 {
 }
 
 header {
-  background-color: var(--primary-color-100);
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  background-color: var(--primary-color-900);
   color: var(--primary-color-900);
-  padding: 2em;
+  padding: 1em;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header.active {
+  background-color: var(--primary-color-100);
+  -webkit-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 nav a {
-  color: var(--primary-color-900);
+  color: var(--primary-color-100);
   text-decoration: none;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+header.active a {
+  color: var(--primary-color-900);
 }
 
 nav {
@@ -141,6 +172,9 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ul {
@@ -155,5 +189,12 @@ ul {
 
 li + li {
   margin-left: 1em;
+}
+
+@media (min-width: 370px) {
+  nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=card.css.map */

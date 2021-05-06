@@ -3,19 +3,21 @@ layout: default.liquid
 title: Activities at the hub
 ---
 
-<h1>Activities at the Hub</h1>
-<div class="cards">
-	{% for card in cards.11tydata %}
+<div class="container">
+	<h1>Activities at the Hub</h1>
+	<div class="cards">
+		{% for card in cards.11tydata %}
 
-	<div class="card" style="background-image: url('{{ card.cardImg }}')">
-		<div class="card-title">{{ card.cardTitle }}</div>
+		<div class="card" style="background-image: url('{{ card.cardImg }}')">
+			<div class="card-title">{{ card.cardTitle }}</div>
 
-		<div class="card-contact">{{ card.cardContact }}</div>
-		<div class="card-blurb">
-			<p>{{ card.cardBlurb }}</p>
-			<p>{{ card.cardDateTimes }}</p>
+			<div class="card-contact">{{ card.cardContact }}</div>
+			<div class="card-blurb">
+				<p>{{ card.cardBlurb }}</p>
+				<p>{{ card.cardDateTimes }}</p>
+			</div>
 		</div>
-	</div>
 
-	{% endfor %}
+		{% endfor %}
+	</div>
 </div>

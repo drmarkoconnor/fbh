@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
 	/* primary color block */
@@ -17,8 +17,17 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Roboto', sans-serif;
-	// background-color: var(--primary-color-600);
+	font-family: 'Poppins', sans-serif;
+}
+.logo {
+	width: 150px;
+}
+.container {
+	position: absolute;
+	// display: flex;
+	// flex-direction: column;
+	top: 16vh;
+	z-index: -1;
 }
 .card img {
 	display: flex;
@@ -28,11 +37,13 @@ body {
 h1 {
 	color: var(--primary-color-900);
 	text-align: center;
+	z-index: -1;
 }
 .cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	z-index: -1;
 }
 .card {
 	position: relative;
@@ -55,7 +66,6 @@ h1 {
 	color: var(--primary-color-100);
 	background-color: var(--primary-color-600);
 	width: 70%;
-	// border-radius: 20px;
 	text-align: center;
 }
 
@@ -99,17 +109,34 @@ h1 {
 }
 
 header {
-	background-color: var(--primary-color-100);
+	position: fixed;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	background-color: var(--primary-color-900);
 	color: var(--primary-color-900);
-	padding: 2em;
+	padding: 1em;
+	margin: 0 auto;
+	transition: all 0.5s ease-in-out;
 }
+header.active {
+	background-color: var(--primary-color-100);
+	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
 nav a {
-	color: var(--primary-color-900);
+	color: var(--primary-color-100);
 	text-decoration: none;
+	padding: 5px;
+	margin-right: 20px;
+}
+header.active a {
+	color: var(--primary-color-900);
 }
 nav {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 ul {
 	display: flex;
@@ -118,4 +145,9 @@ ul {
 }
 li + li {
 	margin-left: 1em;
+}
+@media (min-width: 370px) {
+	nav {
+		flex-wrap: wrap;
+	}
 }
