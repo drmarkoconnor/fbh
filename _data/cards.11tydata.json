@@ -1,5 +1,12 @@
 [
 	{
+		"cardImg": "/assets/images/football.jpg",
+		"cardTitle": "Kids Community Football and Summer Fun Days",
+		"cardContact": "Nicholas Cross - 07852556274 ",
+		"cardBlurb": "Long Ashton Community Football, which started up in May, is providing fun and inclusive football sessions for Long Ashton and surrounding areas. Well attended by children from the community, the atmosphere and enthusiasm among the groups has been fantastic. The sessions are all about fun and building relationships whilst gaining a love for sport and physical activity.",
+		"cardDateTimes": "Saturdays 1-3pm. Summer  Holiday Fun days  will take place on 9th,10th & 11th August 2021 between 10am-2pm. Places will be limited so advice is to book early to avoid disappointment. Ring Nicholas on 07852556274 to book"
+	},
+	{
 		"cardImg": "/assets/images/female-cricketer.jpg",
 		"cardTitle": "Girls' Cricket",
 		"cardContact": "robtaffinder@googlemail.com",
@@ -11,28 +18,22 @@
 		"cardTitle": "Pilates",
 		"cardContact": "rachel@rwpilates.com",
 		"cardBlurb": "Pilates is strong at the Hub and there is sure to be a group and instructor to suit you whatever your level - come and stretch and relax",
-		"cardDateTimes": "Thursday evenings"
+		"cardDateTimes": "Tuesdays, Thursdays and Fridays: Daytime and Evening sessions available"
 	},
 	{
 		"cardImg": "/assets/images/us-17.jpg",
 		"cardTitle": "Creative Writing",
 		"cardContact": "info@flaxbourtonhub.com",
-		"cardBlurb": "Interested in writing a novel? Or perhaps some short stories or maybe a memoir. Whatever your writing interests come and improve your creative writing in the fun and supportive group",
+		"cardBlurb": "Interested in writing a novel? Or perhaps some short stories or maybe a memoir. Whatever your writing interests let us know if you'd like to join a new creative writing group.",
 		"cardDateTimes": "Monday evenings"
 	},
-	{
-		"cardImg": "/assets/images/football.jpg",
-		"cardTitle": "Football",
-		"cardContact": "info@flaxbourtonhub.com",
-		"cardBlurb": "Regular football is available on Saturday Mornings. Coaching is available for kids too.",
-		"cardDateTimes": "Saturdays"
-	},
+
 	{
 		"cardImg": "/assets/images/fbh-poster-10.jpg",
-		"cardTitle": "Playgroup",
+		"cardTitle": "Flax Tots",
 		"cardContact": "info@flaxbourtonhub.com",
-		"cardBlurb": "Bring your toddler to this fun play group and meet other local mums and dads",
-		"cardDateTimes": "Monday and Wednesday Mornings"
+		"cardBlurb": "Bring your little ones to this fun play group and meet other local mums and dads",
+		"cardDateTimes": "Monday mornings 10 to 11:30am"
 	},
 	{
 		"cardImg": "/assets/images/wedding.jpg",
@@ -46,6 +47,13 @@
 		"cardTitle": "Team Meetings",
 		"cardContact": "bookings@flaxbourtonhub.com",
 		"cardBlurb": "The Hub can make a great venue for your team meetings or awaydays. contact bookings@flaxbourtonhub.org",
-		"cardDateTimes": "A wide range of days and times to suit your team"
+		"cardDateTimes": "Good availabilty"
+	},
+	{
+		"cardImg": "/assets/images/hub-2.jpg",
+		"cardTitle": "Advertise Your Activity or Business here",
+		"cardContact": "info@flaxbourtonhub.com",
+		"cardBlurb": "You can have your activity or local business advertised here at no cost. Send us your content and contact numbers and we will do the rest. We will even provde a suitable photograph too if you don't have one. Email us today at info@flaxbourtonhub.com ",
+		"cardDateTimes": "There is currently no charge to advertise wiith us"
 	}
 ]
