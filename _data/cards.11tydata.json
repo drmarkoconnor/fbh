@@ -23,7 +23,7 @@
 	{
 		"cardImg": "/assets/images/us-17.jpg",
 		"cardTitle": "Creative Writing",
-		"cardContact": "info@flaxbourtonhub.com",
+		"cardContact": "info@flaxbourtonhub.org",
 		"cardBlurb": "Interested in writing a novel? Or perhaps some short stories or maybe a memoir. Whatever your writing interests let us know if you'd like to join a new creative writing group.",
 		"cardDateTimes": "Flexible timing - group determines"
 	},
@@ -31,29 +31,29 @@
 	{
 		"cardImg": "/assets/images/fbh-poster-10.jpg",
 		"cardTitle": "Flax Tots",
-		"cardContact": "info@flaxbourtonhub.com",
+		"cardContact": "info@flaxbourtonhub.org",
 		"cardBlurb": "Bring your little ones to this fun play group and meet other local mums and dads",
 		"cardDateTimes": "Monday mornings 10 to 11:30am"
 	},
 	{
 		"cardImg": "/assets/images/wedding.jpg",
 		"cardTitle": "Weddings",
-		"cardContact": "info@flaxbourtonhub.com",
+		"cardContact": "info@flaxbourtonhub.org",
 		"cardBlurb": "Why not book the Hub for your wedding? With capacity for up to 150 guests and the beautiful countryside views for your photos the Hub makes a great venue",
 		"cardDateTimes": "Now booking for Summer 2022"
 	},
 	{
 		"cardImg": "/assets/images/teamMeetings.jpg",
 		"cardTitle": "Team Meetings",
-		"cardContact": "bookings@flaxbourtonhub.com",
+		"cardContact": "bookings@flaxbourtonhub.org",
 		"cardBlurb": "The Hub can make a great venue for your team meetings or awaydays. contact bookings@flaxbourtonhub.org",
 		"cardDateTimes": "Good availabilty"
 	},
 	{
 		"cardImg": "/assets/images/hub-2.jpg",
 		"cardTitle": "Advertise Your Activity or Business here",
-		"cardContact": "info@flaxbourtonhub.com",
-		"cardBlurb": "You can have your activity or local business advertised here at no cost. Send us your content and contact numbers and we will do the rest. We will even provde a suitable photograph too if you don't have one. Email us today at info@flaxbourtonhub.com ",
+		"cardContact": "info@flaxbourtonhub.org",
+		"cardBlurb": "You can have your activity or local business advertised here at no cost. Send us your content and contact numbers and we will do the rest. We will even provde a suitable photograph too if you don't have one. Email us today at info@flaxbourtonhub.org ",
 		"cardDateTimes": "There is currently no charge to advertise wiith us"
 	}
 ]
