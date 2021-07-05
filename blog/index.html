@@ -1,0 +1,16 @@
+--- 
+layout: default
+title: Blog Index Page
+---
+<h1>{{ title }}</h1>
+
+<ul>
+   {% for item in collection.post %}
+     <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+     {{ item.data | log }}
+   {% endfor %}
+ </ul>
+
+
+
+

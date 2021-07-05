@@ -14,6 +14,14 @@
 		"cardDateTimes": "Tuesdays 6pm"
 	},
 	{
+		"cardImg": "/assets/images/thomastank.png",
+		"cardTitle": "Train Master",
+		"cardContact": "Sophie 07894293326",
+		"cardBlurb": "If your child loves to play trains then look no further.",
+		"cardDateTimes": "Coming in August - Book now - somersetnorth@trainmaster.co.uk"
+	},
+
+	{
 		"cardImg": "/assets/images/pilatesCouple.jpg",
 		"cardTitle": "Pilates",
 		"cardContact": "rachel@rwpilates.com",

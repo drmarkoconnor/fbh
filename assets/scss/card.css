@@ -197,4 +197,16 @@ li + li {
         flex-wrap: wrap;
   }
 }
+
+/*===========================
+    FOOTER css for pages other than main index
+===========================*/
+footer {
+  background-color: var(--primary-color-600);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*# sourceMappingURL=card.css.map */
