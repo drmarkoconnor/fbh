@@ -14,11 +14,18 @@
 		"cardDateTimes": "Tuesdays 6pm"
 	},
 	{
-		"cardImg": "/assets/images/thomastank.png",
+		"cardImg": "/assets/images/trains.jpeg",
 		"cardTitle": "Train Master",
-		"cardContact": "Sophie 07894293326",
-		"cardBlurb": "If your child loves to play trains then look no further.",
-		"cardDateTimes": "Coming in August - Book now - somersetnorth@trainmaster.co.uk"
+		"cardContact": "somersetnorth@trainmaster.co.uk",
+		"cardBlurb": "If your child loves to play trains then look no further. Children’s event with rides on trains, giant track layouts, build your own tracks, Thomas Minis, superstations and lots more. We also offer sibling discount.",
+		"cardDateTimes": "Wednesday 18th August 10.15-11.15 and 11.30-12.30 - Book now - somersetnorth@trainmaster.co.uk"
+	},
+	{
+		"cardImg": "/assets/images/littlecity.webp",
+		"cardTitle": "Little City UK",
+		"cardContact": "jenny@littlecityuk.com",
+		"cardBlurb": "Mobile role play City for the under 5’s to explore, discover and enjoy. Utilising bespoke backdrops and specially selected high-quality toys and equipment.",
+		"cardDateTimes": "Wednesdays every month"
 	},
 
 	{
