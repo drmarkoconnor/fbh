@@ -178,6 +178,21 @@ p {
 	color: #fff;
 }
 
+.news {
+	padding: 4em;
+	max-width: 70em;
+	margin: 0 auto;
+}
+.news p {
+	font-size: 1.5rem;
+	line-height: 1.7;
+	/* margin: 1em 0; */
+	padding: 1em;
+}
+.news img {
+	margin: 0;
+}
+
 /*===== All Preloader Style =====*/
 .preloader {
 	/* Body Overlay */
