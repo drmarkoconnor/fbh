@@ -39,14 +39,14 @@
 		"faqTitle": "title",
 		"faqContact": "bookings@flaxbourtonhub.org.uk",
 		"faqQuestion": "Do you have kitchen facilities?",
-		"faqAnswer": "Yes! A full list of our kitchen facilities can be found here (See hall & kitchen facilities .doc attached)"
+		"faqAnswer": "Yes! A full list of our kitchen facilities can be found here <a href=https://hallbookingonline.com/flaxbourton/documentation.php> hall & kitchen facilities documentation)</a>"
 	},
 	{
 		"faqImg": "/assets/images/yoga_isie.jpg",
 		"faqTitle": "title",
 		"faqContact": "bookings@flaxbourtonhub.org.uk",
 		"faqQuestion": "What kitchen crockery/utensils/glasses are available?",
-		"faqAnswer": "A comprehensive list of items can be found here (see hall & kitchen facilities .doc attached)"
+		"faqAnswer": "A comprehensive list of items can be found here <a href=https://hallbookingonline.com/flaxbourton/documentation.php> crockery available documentation)"
 	},
 	{
 		"faqImg": "/assets/images/yoga_isie.jpg",
