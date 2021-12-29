@@ -18,7 +18,7 @@
 		"faqTitle": "title",
 		"faqContact": "bookings@flaxbourtonhub.org.uk",
 		"faqQuestion": "What are the dimensions of the hall?",
-		"faqAnswer": "Please see (link to .pdf – attached) for dimensions"
+		"faqAnswer": "Please see <a href=https://hallbookingonline.com/flaxbourton/documentation.php> hub dimensions documentation)</a>"
 	},
 	{
 		"faqImg": "/assets/images/yoga_isie.jpg",
