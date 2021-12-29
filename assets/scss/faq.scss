@@ -14,3 +14,11 @@ li {
 .faqQ {
 	font-weight: bold;
 }
+a {
+	color: red;
+}
+
+a:hover {
+	text-decoration: overline;
+	font-size: larger;
+}
