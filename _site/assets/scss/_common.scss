@@ -3,6 +3,18 @@
 ===========================*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
+:root {
+	/* primary color block */
+	--primary-color-100: rgb(253, 252, 252);
+	--primary-color-300: hsl(240, 40%, 60%);
+	--primary-color-600: hsl(240, 60%, 30%);
+	--primary-color-900: hsl(350, 62%, 70%);
+	/* secondary color block */
+	--secondary-color-100: hsl(34, 30%, 30%);
+	--secondary-color-300: hsl(36, 40%, 60%);
+	--secondary-color-600: hsl(36, 60%, 30%);
+	--secondary-color-900: hsl(36, 80%, 10%);
+}
 html {
 	scroll-behavior: smooth;
 }
@@ -81,6 +93,14 @@ h5 {
 }
 h6 {
 	font-size: 10px;
+}
+
+.container {
+	// position: absolute;
+	// display: flex;
+	// flex-direction: column;
+	margin-top: 200px;
+	z-index: -3;
 }
 
 ul,

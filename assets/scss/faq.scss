@@ -1,21 +1,13 @@
-h1 {
-	color: red;
-}
-.container {
+.faqContainer {
 	width: 80%;
 	margin-left: 2em;
 }
-ol,
-ul,
-li {
-	padding: 1em;
-	margin-left: 1em;
-}
+
 .faqQ {
 	font-weight: bold;
 }
 .faqA a {
-	color: red;
+	color: rgb(39, 65, 214);
 }
 
 .faqA a:hover {

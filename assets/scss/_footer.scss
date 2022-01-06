@@ -3,6 +3,8 @@
 ===========================*/
 
 .footer_area {
+	display: flex;
+	align-items: space-between;
 	background-color: $theme-color;
 	padding-top: 10px;
 	padding-bottom: 10px;
