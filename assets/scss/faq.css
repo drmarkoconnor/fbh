@@ -3,12 +3,21 @@
   margin-left: 2em;
 }
 
+.faqContainer h1 {
+  padding-bottom: 1.5em;
+}
+
 .faqQ {
   font-weight: bold;
 }
 
 .faqA a {
   color: #2741d6;
+}
+
+.faqA {
+  line-height: 1.3;
+  padding-bottom: 2em;
 }
 
 .faqA a:hover {

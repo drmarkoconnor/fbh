@@ -7,7 +7,7 @@
   --primary-color-100: rgb(253, 252, 252);
   --primary-color-300: hsl(240, 40%, 60%);
   --primary-color-600: hsl(240, 60%, 30%);
-  --primary-color-900: hsl(350, 62%, 70%);
+  --primary-color-900: hsl(246, 63%, 9%);
   /* secondary color block */
   --secondary-color-100: hsl(34, 30%, 30%);
   --secondary-color-300: hsl(36, 40%, 60%);
@@ -477,10 +477,6 @@ ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   list-style: none;
-}
-
-li + li {
-  margin-left: 1em;
 }
 
 @media (min-width: 370px) {
@@ -1147,12 +1143,23 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #E84E4E;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer_area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footer_menu ul li {
@@ -1182,13 +1189,13 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
 }
 
 .credit {
-  font-size: 10px;
-  color: #4115e2;
+  font-size: 1em;
+  color: #090613;
   padding-top: 15px;
 }
 
 .credit a {
-  color: #d4e91d;
+  color: #090613;
 }
 
 .footer_social ul li {

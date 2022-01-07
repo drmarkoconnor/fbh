@@ -4,10 +4,16 @@
 
 .footer_area {
 	display: flex;
-	align-items: space-between;
+	justify-content: space-around;
+	align-items: center;
 	background-color: $theme-color;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+	.footer_area {
+		flex-direction: column;
+	}
 }
 
 .footer_menu {
@@ -38,11 +44,11 @@
 }
 
 .credit {
-	font-size: 10px;
-	color: rgb(65, 21, 226);
+	font-size: 1em;
+	color: rgb(9, 6, 19);
 	padding-top: 15px;
 	a {
-		color: rgb(212, 233, 29);
+		color: rgb(9, 6, 19);
 	}
 }
 
