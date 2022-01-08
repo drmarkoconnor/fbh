@@ -1,10 +1,17 @@
 .faqContainer {
-  width: 80%;
-  margin-left: 2em;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .faqContainer h1 {
-  padding-bottom: 1.5em;
+  padding-bottom: 1em;
+}
+
+@media (max-width: 590px) {
+  .faqContainer h1 {
+    padding-bottom: 1em;
+    margin-top: 5em;
+  }
 }
 
 .faqQ {
