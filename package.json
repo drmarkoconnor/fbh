@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts":{
-    "build":"eleventy"
+  "scripts": {
+    "build": "eleventy"
   },
   "dependencies": {
-    "@11ty/eleventy": "0.12.1"
+    "@11ty/eleventy": "0.12.1",
+    "luxon": "^2.3.0"
   },
   "keywords": [],
   "author": "",
