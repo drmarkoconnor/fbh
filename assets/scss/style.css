@@ -1706,12 +1706,12 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
 
 .credit {
   font-size: 1em;
-  color: #090613;
+  color: #f8f8fa;
   padding-top: 15px;
 }
 
 .credit a {
-  color: #090613;
+  color: #fcfcfd;
 }
 
 .footer_social ul li {
