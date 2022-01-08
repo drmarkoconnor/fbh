@@ -1667,7 +1667,6 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
   bottom: 0;
   height: 100%;
   width: 100%;
-  margin-top: 5em;
 }
 
 @media (max-width: 768px) {
