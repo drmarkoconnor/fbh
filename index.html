@@ -37,6 +37,7 @@ description: "welcome to the Flax Bourton Hub - check out the activities going o
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/scss/style.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     
 </head>
 
@@ -584,6 +585,17 @@ The village has a strong record of promoting social events with many different a
     
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
     
 </body>
 
