@@ -18,3 +18,4 @@ collections:
       - { label: 'Tags', name: 'tags', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'markdown' }
       - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
