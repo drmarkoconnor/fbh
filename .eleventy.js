@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
 	})
 	eleventyConfig.addPassthroughCopy('assets')
+	eleventyConfig.addPassthroughCopy('admin')
 	return {
 		templateFormats: ['md', 'njk', 'html', 'liquid'],
 
