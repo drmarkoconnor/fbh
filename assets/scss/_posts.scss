@@ -24,12 +24,13 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	// outline: 1px solid rgb(255, 0, 200);
+	outline: 1px solid rgb(255, 0, 200);
 	height: 100%;
 }
 
-.posts-container--title {
-	margin: 1em;
+.posts-container--title h1,
+.posts-container--title h2 {
+	margin-left: 1em;
 }
 
 .post-image {
@@ -41,22 +42,36 @@
 	// border: 3px solid #1678da;
 	border-radius: 1.15rem;
 	margin: 1em;
-	width: 40%;
+	max-width: 280px;
+	min-width: 80px;
+	height: auto;
 	padding: 0.5em;
 	box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .post-title {
 	text-align: center;
 	font-weight: bold;
+	font-size: 1.3em;
+	height: 80px;
 }
 .post-info {
-	border: 1px solid green;
+	font-size: 0.8em;
 }
 .post-description {
-	font-size: 1.2em;
+	font-size: 1em;
+	margin-top: 1em;
 }
 .post-description a {
-	font-size: 1.8em;
+	font-size: 1em;
+}
+.post-description a button {
+	background-color: black;
+	color: white;
+	border: 1px solid red;
+	border-radius: 1.15rem;
+	padding: 0.5em;
+	box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.4);
+	margin: 2rem 0em;
 }
 .post-content {
 	color: var(--primary-color-900);
@@ -65,7 +80,8 @@
 }
 .post-content p {
 	font-size: 1.1em;
-	line-height: 1.7;
+	line-height: 1.9;
+	margin-bottom: 1.3em;
 }
 
 .post-content h1 {
@@ -77,12 +93,6 @@
 .post-content h2 {
 	font-size: 1.9em;
 }
-// .post-content h3,
-// h4,
-// h5,
-// h6 {
-// 	font-size: 0.9em;
-// }
 
 .post-content ul {
 	display: flex;

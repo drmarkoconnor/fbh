@@ -1479,11 +1479,13 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  outline: 1px solid #ff00c8;
   height: 100%;
 }
 
-.posts-container--title {
-  margin: 1em;
+.posts-container--title h1,
+.posts-container--title h2 {
+  margin-left: 1em;
 }
 
 .post-image {
@@ -1500,7 +1502,9 @@ ul {
           flex-direction: column;
   border-radius: 1.15rem;
   margin: 1em;
-  width: 40%;
+  max-width: 280px;
+  min-width: 80px;
+  height: auto;
   padding: 0.5em;
   -webkit-box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.4);
@@ -1509,18 +1513,32 @@ ul {
 .post-title {
   text-align: center;
   font-weight: bold;
+  font-size: 1.3em;
+  height: 80px;
 }
 
 .post-info {
-  border: 1px solid green;
+  font-size: 0.8em;
 }
 
 .post-description {
-  font-size: 1.2em;
+  font-size: 1em;
+  margin-top: 1em;
 }
 
 .post-description a {
-  font-size: 1.8em;
+  font-size: 1em;
+}
+
+.post-description a button {
+  background-color: black;
+  color: white;
+  border: 1px solid red;
+  border-radius: 1.15rem;
+  padding: 0.5em;
+  -webkit-box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.4);
+  margin: 2rem 0em;
 }
 
 .post-content {
@@ -1531,7 +1549,8 @@ ul {
 
 .post-content p {
   font-size: 1.1em;
-  line-height: 1.7;
+  line-height: 1.9;
+  margin-bottom: 1.3em;
 }
 
 .post-content h1 {

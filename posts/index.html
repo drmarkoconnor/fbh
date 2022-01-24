@@ -18,16 +18,18 @@ eleventyExcludeFromCollections: 'true'
 		<div class="post-info">
 			by {{ post.data.author }} on {{ post.data.date | postDate }}
 		</div>
-		<div class="post-description">
-			{{ post.data.description |truncate: 75 }}
-			<a href="{{ post.url}}">... read more</a>
-		</div>
-
 		<div class="post-image">
 			<img src="{{ post.data.image }}" alt="post image" />
 		</div>
-		<!-- consider iteerating as a list that links to a tags page -->
+		<div class="post-description">
+			{{ post.data.description |truncate: 75 }}
+			<a href="{{ post.url}}"><button>... read more</button> </a>
+		</div>
+
+		<!-- consider iterating as a list that links to a tags page -->
+		{%- for tag in collections.tags -%}{%- if tag.data == 'her' -%}
 		<div class="post-tags">Tags: {{ post.data.tags }}</div>
+		{% endif %} {%- endfor -%}
 	</div>
 
 	{%- endfor -%}
