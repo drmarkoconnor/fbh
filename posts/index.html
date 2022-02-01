@@ -8,10 +8,10 @@ eleventyExcludeFromCollections: 'true'
 	<h1>View from the hub...</h1>
 	<h2>A collection of our recent blogs</h2>
 </div>
-<div class="posts-container">
+<div class="posts-container switcher">
 	{%- for post in collections.post reversed -%}
 
-	<div class="post">
+	<div class="post cluster">
 		<div class="post-title">
 			<a href="{{ post.url}}">{{ post.data.title }}</a>
 		</div>
