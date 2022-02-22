@@ -8,26 +8,27 @@ eleventyExcludeFromCollections: 'true'
 	<h1>View from the hub...</h1>
 	<h2>A collection of our recent blogs</h2>
 </div>
-<div class="posts-container switcher">
+<div class="posts-container grid">
 	{%- for post in collections.post reversed -%}
 
-	<div class="post cluster">
+	<div class="box">
 		<div class="post-title">
-			<a href="{{ post.url}}">{{ post.data.title }}</a>
+			<li><a href="{{ post.url}}">{{ post.data.title }}</a></li>
 		</div>
+		<a href="{{ post.url}}"><button>... read more</button> </a>
 		<div class="post-info">
 			by {{ post.data.author }} on {{ post.data.date | postDate }}
 		</div>
-		<div class="post-image">
+		<div class="post-image frame">
 			<img src="{{ post.data.image }}" alt="post image" />
 		</div>
+		{{ post.data.tags }}
 		<div class="post-description">
-			{{ post.data.description |truncate: 75 }}
-			<a href="{{ post.url}}"><button>... read more</button> </a>
+			{{ post.data.description |truncate: 100 }}
 		</div>
 
 		<!-- consider iterating as a list that links to a tags page -->
-		{%- for tag in collections.tags -%}{%- if tag.data == 'her' -%}
+		{%- for tag in collections.tags -%}{%- if tag.data = 'her' -%}
 		<div class="post-tags">Tags: {{ post.data.tags }}</div>
 		{% endif %} {%- endfor -%}
 	</div>

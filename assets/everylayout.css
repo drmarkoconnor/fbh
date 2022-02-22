@@ -28,8 +28,8 @@
 	/* ... */
 
 	/* COLOURS */
-	--color-light: rgb(124, 126, 139);
-	--color-dark: hsl(241, 80%, 52%);
+	--color-light: rgb(232, 233, 241);
+	--color-dark: hsl(241, 84%, 17%);
 
 	/* primary color block */
 	--primary-color-100: hsl(240, 100%, 100%);
@@ -324,3 +324,7 @@ there are more than 4 child elements */
 	display: none;
 }
 
+.post-title:nth-child(1){
+	background-color: gold;
+
+}
