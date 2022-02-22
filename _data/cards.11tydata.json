@@ -1,10 +1,10 @@
 [
 	{
-		"cardImg": "/assets/images/yoga_isie.jpg",
-		"cardTitle": "Yoga with Isie",
-		"cardContact": "yogisie3@gmail.com",
-		"cardBlurb": "In person group sessions provide the perfect opportunity to explore Sanatan Hatha Yoga together. Focusing on balancing the energies of the mind, body and soul as well as releasing  bodily tension and any pent up toxins. An opportunity to develop a stronger mind-body relationship while relaxing, soothing and calming the mind. Perfect for stress release and maintaining a healthy body and mind. Group sessions mean you can join in with other people in a safe space. All you need to bring is your own equipment (mat, blocks, straps etc), some water, a blanket and yourself.",
-		"cardDateTimes": "Tuesdays at 9:45am"
+		"cardImg": "/assets/images/rachel_pilates.jpg",
+		"cardTitle": "Pilates",
+		"cardContact": "rachel@pilatesbyrachel.co.uk",
+		"cardBlurb": "Pilates is strong at The Hub with classes suitable for a variety of ages and fitness levels. Classes are available during term time and school holidays, join at any time.  Please contact Rachel for more information on 07958140667",
+		"cardDateTimes": "Tuesday lunchtimes, Tuesday evenings, Thursday evenings"
 	},
 	{
 		"cardImg": "/assets/images/football.jpg",
@@ -35,13 +35,6 @@
 		"cardDateTimes": "Wednesdays every month"
 	},
 
-	{
-		"cardImg": "/assets/images/rachel_pilates.jpg",
-		"cardTitle": "Pilates",
-		"cardContact": "rachel@pilatesbyrachel.co.uk",
-		"cardBlurb": "Pilates is strong at The Hub with classes suitable for a variety of ages and fitness levels. Classes are available during term time and school holidays, join at any time.  Please contact Rachel for more information on 07958140667",
-		"cardDateTimes": "Tuesday lunchtimes, Tuesday evenings, Thursday evenings"
-	},
 	{
 		"cardImg": "/assets/images/us-17.jpg",
 		"cardTitle": "Creative Writing",
