@@ -1,5 +1,12 @@
 [
 	{
+		"cardImg": "/assets/images/ukraine_heart.jpg",
+		"cardTitle": "Supporting Ukraine",
+		"cardContact": "support@flaxbourtonhub.org",
+		"cardBlurb": "There will be boxes outside the Flax Bourton Hub collecting donations to support the people of Ukraine as they struggle to survive the war upon them. The boxes will be collected each evening over the next few days and their contents added to others locally for shipping to the people of Ukraine. Please give what you can - Pots/pans, Blankets, tinned food, soap, tampons, underwear, first aid kits ... thank you",
+		"cardDateTimes": "Operating over 2nd March 2022 onwards"
+	},
+	{
 		"cardImg": "/assets/images/rachel_pilates.jpg",
 		"cardTitle": "Pilates",
 		"cardContact": "rachel@pilatesbyrachel.co.uk",

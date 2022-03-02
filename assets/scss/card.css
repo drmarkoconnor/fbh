@@ -25,10 +25,11 @@ body {
   margin: 0 auto;
 }
 
-.news h1,
+h1,
 h6 {
   color: var(--primary-color-600);
   text-align: center;
+  margin-top: 1em;
   z-index: -1;
 }
 
