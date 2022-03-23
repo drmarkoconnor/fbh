@@ -1,12 +1,5 @@
 [
 	{
-		"cardImg": "/assets/images/ukraine_heart.jpg",
-		"cardTitle": "Supporting Ukraine",
-		"cardContact": "support@flaxbourtonhub.org",
-		"cardBlurb": "There will be boxes outside the Flax Bourton Hub collecting donations to support the people of Ukraine as they struggle to survive the war upon them. The boxes will be collected each evening over the next few days and their contents added to others locally for shipping to the people of Ukraine. Please give what you can - Pots/pans, Blankets, tinned food, soap, tampons, underwear, first aid kits ... thank you",
-		"cardDateTimes": "Operating over 2nd March 2022 onwards"
-	},
-	{
 		"cardImg": "/assets/images/rachel_pilates.jpg",
 		"cardTitle": "Pilates",
 		"cardContact": "rachel@pilatesbyrachel.co.uk",
@@ -41,7 +34,6 @@
 		"cardBlurb": "Mobile role play City for the under 5’s to explore, discover and enjoy. Utilising bespoke backdrops and specially selected high-quality toys and equipment.",
 		"cardDateTimes": "Wednesdays every month"
 	},
-
 	{
 		"cardImg": "/assets/images/us-17.jpg",
 		"cardTitle": "Creative Writing",
@@ -49,7 +41,6 @@
 		"cardBlurb": "Interested in writing a novel? Or perhaps some short stories or maybe a memoir. Whatever your writing interests let us know if you'd like to join a new creative writing group.",
 		"cardDateTimes": "Flexible timing - group determines"
 	},
-
 	{
 		"cardImg": "/assets/images/fbh-poster-10.jpg",
 		"cardTitle": "Flax Tots",
@@ -79,20 +70,12 @@
 		"cardDateTimes": "Good availabilty - Contact bookings@flaxbourtonhub.org"
 	},
 	{
-		"cardImg": "/assets/images/zumba.jpg",
-		"cardTitle": "Zumba",
-		"cardContact": "daniellemilesuk@gmail.com 07731 998271",
-		"cardBlurb": "Pretty much the most awesome workout ever. Dance to great music, with great people, and burn a ton of calories without even realizing it. Zumba is coming to the Hub soon",
-		"cardDateTimes": "Starting Thursday 4th November at 8pm"
-	},
-	{
 		"cardImg": "/assets/images/bible.jpg",
 		"cardTitle": "Bristol Revival Assembly",
 		"cardContact": "bristolrevivalassembly@gmail.com",
 		"cardBlurb": "Want to know more about real Bible Salvation? Then come and join us on either Wednesday evenings @ 7:45pm or Sunday’s 3pm & 6:30pm to hear and understand more. ",
 		"cardDateTimes": "Contact Pastor Travis Breguet 07851 121312"
 	},
-
 	{
 		"cardImg": "/assets/images/hub-2.jpg",
 		"cardTitle": "Advertise Your Activity or Business here",
