@@ -9,13 +9,13 @@
 		"cardWebSite": "http://www.bbc.co.uk"
 	},
 	{
-		"cardImg": "/assets/images/plumber.jpg",
-		"cardTitle": "Bryant Plumbers",
-		"cardContactEmail": "bryant@plumbers.co.uk",
-		"cardContactMobile": "07970386375",
-		"cardContacOther": "01275 xxxxxx",
-		"cardBlurb": "We mend leaks and wet stuff",
-		"cardWebSite": "http://www.bbc.co.uk"
+		"cardImg": "/assets/images/brown car.jpg",
+		"cardTitle": "Backwell Motors",
+		"cardContactEmail": "http://www.backwellmotors.co.uk/home.html",
+		"cardContactMobile": "",
+		"cardContacOther": "01275463441",
+		"cardBlurb": "Backwell Motors is a long established family business based in Backwell near Bristol. Backwell Motors prides itself in offering a high quality service together with a friendly personal service. Our high tech diagnostic equipment enables almost any vehicle to be catered for with the benefit of much lower costs than main dealer service. The location is great for commuters, who can leave their vehicles for service and catch the train at Backwell Station which is located right next to the garage. On offer are a large range of services including:• Accident Repairs• Servicing• MOTs• Car Restoration• Convenience Store• Fuel - Whatever your motoring needs please call - we will be able to help!",
+		"cardWebSite": "http://www.backwellmotors.co.uk/home.html"
 	},
 	{
 		"cardImg": "/assets/images/plumber.jpg",
