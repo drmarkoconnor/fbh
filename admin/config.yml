@@ -1,23 +1,95 @@
 backend:
+  # Use netlify identity as backend
   name: git-gateway
-  branch: publisher # Branch to update (optional; defaults to master)
-# This line should *not* be indented
-publish_mode: editorial_workflow
-# This line should *not* be indented
-media_folder: '/assets/images/uploads' # Media files will be stored in the repo under images/uploads
+  branch: master
+### enable below lines for github integration ###
+# name: github
+# repo: surjithctly/neat-starter
+media_folder: 'src/static/img'
+public_folder: '/static/img'
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+# publish_mode: editorial_workflow
 collections:
-  - name: 'post'
-    label: 'Post'
-    folder: '/posts'
+  - label: 'Blog'
+    name: 'blog'
+    publish_mode: editorial_workflow
+    folder: 'src/posts'
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Author', name: 'author', widget: 'string' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
-      - { label: 'Tags', name: 'tags', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'markdown' }
-      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: relation,
+          collection: authors,
+          search_fields: [name],
+          display_fields: [name],
+          value_field: name,
+        }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'author'
-    label: 'Author'
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - widget: list
+        label: 'Tags'
+        name: 'tags'
+        field: { label: 'tag', name: 'tag', widget: string }
+        allow_add: true
+        default: ['news']
+
+  - label: 'Settings'
+    name: 'settings'
+    editor:
+      preview: false
+    files:
+      - label: 'Navigation'
+        name: 'items'
+        file: 'src/_data/navigation.yaml'
+        fields:
+          - label: Nav Items
+            name: items
+            widget: list
+            allow_add: true
+            collapsed: false
+            fields:
+              - { label: Title, name: text, widget: string }
+              - { label: URL, name: url, widget: string }
+
+  - label: 'NewAuthors'
+    name: 'authors'
+    identifier_field: name
+    folder: 'src/authors'
+    publish_mode: editorial_workflow
+    slug: '{{ slug }}'
+    create: true
+    fields:
+      - { label: Name, name: name, widget: string }
+      - { label: Email, name: email, widget: string }
+      - { label: Image, name: image, widget: image }
+      - { label: Body, name: body, widget: markdown }
+
+  # - label: 'The Authors'
+  #   name: 'authors'
+  #   description: 'The contributing authors'
+  #   files:
+  #     - label: 'Authors Subfields'
+  #       file: 'src/_data/authors.yaml'
+  #       name: 'authors'
+  #       widget: 'list'
+  #       fields:
+  #         - label: 'Name'
+  #           name: 'name'
+  #           widget: 'string'
+  #         - label: 'Email'
+  #           name: 'email'
+  #           widget: 'string'
+  #           required: false
+  #         - label: 'Mobile'
+  #           name: 'mobile'
+  #           required: false
+  #           widget: 'number'
