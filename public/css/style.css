@@ -133,7 +133,6 @@ p {
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: 0;
   padding: 0 40px;
@@ -150,13 +149,6 @@ p {
 .main-btn:hover {
   background-color: #6bff7f;
   color: #fff;
-}
-
-.smile {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
 }
 
 /*===== All Section Title Style =====*/
@@ -214,14 +206,12 @@ p {
   left: 50%;
   margin-top: -50%;
   margin-left: -50%;
-  -webkit-animation: ytp-spinner-linspin 1568.23529647ms linear infinite;
   animation: ytp-spinner-linspin 1568.23529647ms linear infinite;
 }
 .preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 .preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator .ytp-spinner-left {
@@ -255,52 +245,19 @@ p {
   left: 0;
   right: -100%;
   border-right-color: #F9F9F9;
-  -webkit-animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 .preloader .loader .ytp-spinner-right .ytp-spinner-circle {
   left: -100%;
   right: 0;
   border-left-color: #F9F9F9;
-  -webkit-animation: ytp-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: ytp-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
 /* Preloader Animations */
-@-webkit-keyframes ytp-spinner-linspin {
-  to {
-    transform: rotate(360deg);
-  }
-}
 @keyframes ytp-spinner-linspin {
   to {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes ytp-spinner-easespin {
-  12.5% {
-    transform: rotate(135deg);
-  }
-  25% {
-    transform: rotate(270deg);
-  }
-  37.5% {
-    transform: rotate(405deg);
-  }
-  50% {
-    transform: rotate(540deg);
-  }
-  62.5% {
-    transform: rotate(675deg);
-  }
-  75% {
-    transform: rotate(810deg);
-  }
-  87.5% {
-    transform: rotate(945deg);
-  }
-  to {
-    transform: rotate(1080deg);
   }
 }
 @keyframes ytp-spinner-easespin {
@@ -329,17 +286,6 @@ p {
     transform: rotate(1080deg);
   }
 }
-@-webkit-keyframes ytp-spinner-left-spin {
-  0% {
-    transform: rotate(130deg);
-  }
-  50% {
-    transform: rotate(-5deg);
-  }
-  to {
-    transform: rotate(130deg);
-  }
-}
 @keyframes ytp-spinner-left-spin {
   0% {
     transform: rotate(130deg);
@@ -349,17 +295,6 @@ p {
   }
   to {
     transform: rotate(130deg);
-  }
-}
-@-webkit-keyframes ytp-right-spin {
-  0% {
-    transform: rotate(-130deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  to {
-    transform: rotate(-130deg);
   }
 }
 @keyframes ytp-right-spin {
@@ -724,7 +659,7 @@ ul {
 .single_hero::before {
   position: absolute;
   content: "";
-  background-color: rgba(43, 42, 61, 0.7);
+  background-color: rgba(43, 42, 61, 0.1);
   width: 100%;
   height: 100%;
   left: 0;
@@ -1030,6 +965,15 @@ ul {
 /*===========================
       06.PRICING css 
 ===========================*/
+.pricing-box {
+  display: flex;
+  flex-direction: row;
+  background-color: yellow;
+  border-radius: 30%;
+  border-left: 5px rgb(215, 231, 215);
+  list-style: disc;
+}
+
 .pricing_area {
   background-color: #F9F9F9;
 }

@@ -868,7 +868,7 @@ ul {
 .single_hero::before {
 	position: absolute;
 	content: '';
-	background-color: rgba(43, 42, 61, 0.7);
+	background-color: rgba(126, 116, 217, 0.7);
 	width: 100%;
 	height: 100%;
 	left: 0;
@@ -883,7 +883,7 @@ ul {
 .hero_content .hero_title {
 	font-size: 60px;
 	line-height: 85px;
-	color: #fff;
+	color: #cfed0d;
 	margin-top: 15px;
 }
 
@@ -1234,6 +1234,7 @@ ul {
 /*===========================
       06.PRICING css 
 ===========================*/
+
 .pricing_area {
 	background-color: #f9f9f9;
 }
@@ -1808,3 +1809,4 @@ p.form-message.error.form-message.error {
 	background-color: #e84e4e;
 }
 /*# sourceMappingURL=style.css.map */
+

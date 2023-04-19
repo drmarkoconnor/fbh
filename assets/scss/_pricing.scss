@@ -2,6 +2,14 @@
       06.PRICING css 
 ===========================*/
 
+.pricing-box {
+	display: flex;
+	flex-direction: row;
+	background-color: yellow;
+	border-radius: 30%;
+	border-left: 5px rgb(215, 231, 215);
+	list-style: disc;
+}
 .pricing_area {
 	background-color: $gray;
 }
