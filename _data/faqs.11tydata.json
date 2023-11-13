@@ -32,7 +32,7 @@
 		"faqTitle": "title",
 		"faqContact": "bookings@flaxbourtonhub.org.uk",
 		"faqQuestion": "Do you have speakers/a sound system?",
-		"faqAnswer": "We do not have speakers or a sound system at the hall."
+		"faqAnswer": "Yes! There is a permanent PA installed which can be linked to via Bluetooth, headphone jack or XLR. You can also plug in a mixing desk. We also have stage and disco lighting! We also have accoustic baffling in the shape of sheep! It's a great venue for a party!"
 	},
 	{
 		"faqImg": "/assets/images/yoga_isie.jpg",
@@ -105,3 +105,4 @@
 		"faqAnswer": "We do not currently have this facility available"
 	}
 ]
+
