@@ -32,8 +32,9 @@
 		"faqTitle": "title",
 		"faqContact": "bookings@flaxbourtonhub.org.uk",
 		"faqQuestion": "Do you have speakers/a sound system?",
-		"faqAnswer": "Yes! There is a permanent PA installed which can be linked to via Bluetooth, headphone jack or XLR. You can also plug in a mixing desk. We also have stage and disco lighting! We also have accoustic baffling in the shape of sheep! It's a great venue for a party!"
+		"faqAnswer": "Yes! There is a permanent Sound and Light PA installed inclusive of your hire charge. It can be linked to via Bluetooth, headphone jack or XLR. You can also plug in a mixing desk. We also have stage and disco lighting! We also have accoustic baffling in the shape of sheep! It's a great venue for a party! A link to our guide to using the light and sound system can be found here <a href=/guides/index.html> sound and light system documentation</a>"
 	},
+
 	{
 		"faqImg": "/assets/images/yoga_isie.jpg",
 		"faqTitle": "title",
