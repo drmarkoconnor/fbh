@@ -1,0 +1,69 @@
+---
+layout: layouts/base.njk
+title: Documents
+description: Policies, guides and supporting documents for using Flax Bourton Hub.
+---
+<section class="page-hero page-hero--media">
+	<div class="shell page-hero__grid">
+		<div class="page-hero__inner">
+			<p class="eyebrow">Documents</p>
+			<h1>Guides, reports and practical documents.</h1>
+			<p class="lead">A clearer place to find hire guidance, supporting documents and useful downloads.</p>
+		</div>
+		<div class="page-hero__media" style="background-image: linear-gradient(rgba(19, 93, 76, 0.14), rgba(19, 93, 76, 0.22)), url('/assets/images/hub-exterior.jpg');" aria-hidden="true"></div>
+	</div>
+</section>
+
+<section class="shell section document-list">
+	<div class="note-card stack">
+		<h2>Key hire guides</h2>
+		<p>
+			The main hire guidance is available as easy-to-read web pages, with downloadable PDFs kept
+			alongside them for anyone who prefers a document version.
+		</p>
+	</div>
+
+	<div class="card-grid reference-visuals">
+		<article class="card stack">
+			<img src="/assets/images/venue-gallery/img_6.jpg" alt="General view of the main hall at Flax Bourton Hub." loading="lazy" />
+			<h2>Hall gallery</h2>
+			<p>A visual tour of the hall, meeting room, kitchen and outside setting, with quick links back to the practical guidance.</p>
+			<div class="document-actions">
+				<a class="button button--secondary" href="/hire/gallery/">Open gallery</a>
+				<a class="button button--ghost" href="/hire/layout-and-outdoor-spaces/">View layout guide</a>
+			</div>
+		</article>
+		<article class="card stack">
+			<img src="/assets/images/outside-space-guidance-final-overlay.jpg" alt="Annotated aerial view showing the football pitch, hall curtilage and wider outside areas around Flax Bourton Hub." loading="lazy" />
+			<h2>Outdoor-space visual reference</h2>
+			<p>A labelled overview of which outside areas relate to hall hire and which do not.</p>
+			<div class="document-actions">
+				<a class="button button--secondary" href="/hire/layout-and-outdoor-spaces/">View guidance page</a>
+				<a class="button button--ghost" href="/assets/docs/outside-space-guidance.pdf">Download PDF</a>
+			</div>
+		</article>
+		<article class="card stack">
+			<img src="/assets/images/outside-space-guidance-overlays.gif" alt="Animated outside-space overlay guide for Flax Bourton Hub." loading="lazy" />
+			<h2>Animated outside-space guide</h2>
+			<p>An animated version of the outside-space overlay for quick reference alongside the written guidance.</p>
+			<div class="document-actions">
+				<a class="button button--secondary" href="/assets/images/outside-space-guidance-overlays.gif">Open animation</a>
+				<a class="button button--ghost" href="/hire/layout-and-outdoor-spaces/">Read policy</a>
+			</div>
+		</article>
+	</div>
+
+	{% for item in documents.items %}
+		<article class="document-card stack">
+			<p class="eyebrow">{{ item.type }}</p>
+			<h2>{{ item.title }}</h2>
+			<p>{{ item.description }}</p>
+			<div class="document-actions">
+				<a class="button button--secondary" href="{{ item.url }}">{{ item.ctaLabel or "Open document" }}</a>
+				{% if item.downloadUrl %}
+					<a class="button button--ghost" href="{{ item.downloadUrl }}">{{ item.downloadLabel or "Download PDF" }}</a>
+				{% endif %}
+			</div>
+		</article>
+	{% endfor %}
+</section>

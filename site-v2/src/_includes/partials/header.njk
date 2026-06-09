@@ -1,0 +1,20 @@
+<header class="site-header">
+	<div class="shell brand-row">
+		<a class="brand" href="/">
+			<img src="/assets/images/theHubLogo.svg" alt="Flax Bourton Hub logo" />
+			<strong>{{ site.name }}</strong>
+		</a>
+
+		<nav aria-label="Primary">
+			<ul class="nav-list">
+				{% for item in site.navigation %}
+					<li>
+						<a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+
+		<a class="button button--primary" href="{{ site.availabilityUrl }}">Book the Hub</a>
+	</div>
+</header>

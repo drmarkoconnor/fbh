@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: Updates
+description: News and updates from Flax Bourton Hub.
+---
+<section class="page-hero page-hero--media">
+	<div class="shell page-hero__grid">
+		<div class="page-hero__inner">
+			<p class="eyebrow">Updates</p>
+			<h1>News from the Hub.</h1>
+			<p class="lead">Announcements, community highlights and practical notices from around the Hub.</p>
+		</div>
+		<div class="page-hero__media" style="background-image: linear-gradient(rgba(19, 93, 76, 0.14), rgba(19, 93, 76, 0.22)), url('/assets/images/update-community.jpg');" aria-hidden="true"></div>
+	</div>
+</section>
+
+<section class="shell section listing">
+	{% for post in collections.updates %}
+		<article class="card listing-card stack">
+			<p class="meta">{{ post.date | readableDate }}</p>
+			<h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+			<p>{{ post.data.summary }}</p>
+			<a class="button button--secondary" href="{{ post.url }}">Read update</a>
+		</article>
+	{% endfor %}
+</section>

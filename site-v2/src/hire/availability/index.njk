@@ -1,0 +1,103 @@
+---
+layout: layouts/base.njk
+title: Availability calendar
+description: An official embedded availability calendar for Flax Bourton Hub, with the current booking system still handling live reservations.
+---
+<section class="page-hero page-hero--media">
+	<div class="shell page-hero__grid">
+		<div class="page-hero__inner">
+			<p class="eyebrow">Availability</p>
+			<h1>Check availability on the Hub site.</h1>
+			<p class="lead">
+				This page now uses the officially supported HallBookingOnline embed so visitors can see
+				availability without leaving the Hub site.
+			</p>
+			<div class="document-actions">
+				<a class="button button--primary" href="{{ bookingCalendar.calendarUrl }}" data-external-booking data-booking-label="Open HallBookingOnline calendar">Continue to booking</a>
+				<a class="button button--secondary" href="/hire/gallery/">View hall gallery</a>
+			</div>
+		</div>
+		<div class="page-hero__media" style="background-image: linear-gradient(rgba(19, 93, 76, 0.14), rgba(19, 93, 76, 0.22)), url('/assets/images/venue-gallery/img_2.jpg');" aria-hidden="true"></div>
+	</div>
+</section>
+
+<section class="shell section section--tight-top">
+	<div class="availability-toolbar">
+		<div class="stack">
+			<p class="eyebrow">Choose a calendar view</p>
+			<h2>All spaces, Main Hall, meeting room or sports pitch</h2>
+		</div>
+		<nav class="embed-switcher" aria-label="Availability views">
+			{% for room in bookingCalendar.rooms %}
+				<a class="embed-link{% if loop.first %} is-active{% endif %}" href="{{ room.pageUrl }}" data-room-code="{{ room.code }}" data-embed-url="{{ room.embedUrl }}">
+					{{ room.label }}
+				</a>
+			{% endfor %}
+		</nav>
+	</div>
+
+	<div id="calendar-status" class="availability-status availability-status--success" aria-live="polite">
+		Showing the official embedded calendar from HallBookingOnline. Use the booking system to confirm reservations.
+	</div>
+
+	<div class="booking-embed-frame card">
+		<iframe
+			id="booking-calendar-embed"
+			class="booking-embed"
+			src="{{ bookingCalendar.embedUrl }}"
+			title="Flax Bourton Hub availability calendar"
+			loading="lazy"></iframe>
+	</div>
+
+	<div class="document-actions availability-actions">
+		<a class="button button--primary" href="{{ bookingCalendar.calendarUrl }}" data-external-booking data-booking-label="Open HallBookingOnline calendar">Continue to booking</a>
+		<a class="button button--secondary" href="{{ bookingCalendar.bookingUrl }}" data-external-booking data-booking-label="Open HallBookingOnline booking site">Open main booking site</a>
+		<a class="button button--ghost" href="/hire/gallery/">View hall gallery</a>
+		<a class="button button--ghost" href="/hire/layout-and-outdoor-spaces/">Layout and outdoor guide</a>
+	</div>
+</section>
+
+<section class="shell section section--tight-top">
+	<div class="note-card stack">
+		<h2>The live-supported calendar view</h2>
+		<p>
+			The existing booking system remains the authoritative place to create reservations and confirm
+			anything time-sensitive. This page uses their supported iframe integration now, and an
+			API-powered version can follow once access and permissions are granted.
+		</p>
+	</div>
+</section>
+<script id="availability-config" type="application/json">{{ bookingCalendar.clientConfigJson | safe }}</script>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const iframeEl = document.getElementById("booking-calendar-embed");
+		const statusEl = document.getElementById("calendar-status");
+		const config = JSON.parse(document.getElementById("availability-config").textContent);
+		const roomLinks = Array.from(document.querySelectorAll(".embed-link"));
+		const roomMap = new Map(config.rooms.map((room) => [room.code, room]));
+		const params = new URLSearchParams(window.location.search);
+		const selectedCode = params.get("room") || "";
+		const currentRoom = roomMap.get(selectedCode) || config.rooms[0];
+
+		if (iframeEl) {
+			iframeEl.src = currentRoom.embedUrl;
+			iframeEl.title = `${currentRoom.label} availability calendar`;
+		}
+
+		if (statusEl) {
+			statusEl.textContent = currentRoom.code
+				? `Showing the official embedded calendar for ${currentRoom.label}. Use the booking system to confirm reservations.`
+				: "Showing the official embedded calendar for all spaces. Use the booking system to confirm reservations.";
+		}
+
+		roomLinks.forEach((link) => {
+			const isActive = link.dataset.roomCode === currentRoom.code;
+			link.classList.toggle("is-active", isActive);
+			if (isActive) {
+				link.setAttribute("aria-current", "page");
+			} else {
+				link.removeAttribute("aria-current");
+			}
+		});
+	});
+</script>

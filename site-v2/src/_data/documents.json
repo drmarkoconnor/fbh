@@ -1,0 +1,68 @@
+{
+	"items": [
+		{
+			"title": "Access and arrival guide",
+			"description": "Key collection, alarm, heating, advance storage access and the departure checklist for the day of your booking.",
+			"url": "/hire/access-and-arrival/",
+			"type": "Hire guide",
+			"ctaLabel": "Read guide",
+			"downloadUrl": "/assets/docs/hall-access-and-arrival-guide.pdf",
+			"downloadLabel": "Download PDF"
+		},
+		{
+			"title": "Hall facilities and equipment",
+			"description": "Kitchen stock, serving items, tables, chairs, stage setup and the practical housekeeping notes hirers need most often.",
+			"url": "/hire/facilities-and-equipment/",
+			"type": "Hire guide",
+			"ctaLabel": "Read guide",
+			"downloadUrl": "/assets/docs/hall-and-kitchen-facilities.pdf",
+			"downloadLabel": "Download PDF"
+		},
+		{
+			"title": "Layout and outdoor spaces",
+			"description": "A simpler layout overview, downloadable floor plan and the updated policy that outdoor spaces are not available for private hire.",
+			"url": "/hire/layout-and-outdoor-spaces/",
+			"type": "Hire guide",
+			"ctaLabel": "Read guide",
+			"downloadUrl": "/assets/docs/hall-floor-plan.pdf",
+			"downloadLabel": "Download floor plan"
+		},
+		{
+			"title": "Terms and conditions of hire",
+			"description": "A web summary of the hire agreement, with the full February 2024 terms and conditions available as a renamed PDF.",
+			"url": "/hire/terms-and-conditions/",
+			"type": "Hire guide",
+			"ctaLabel": "Read summary",
+			"downloadUrl": "/assets/docs/hall-hire-terms-and-conditions-2024.pdf",
+			"downloadLabel": "Download PDF"
+		},
+		{
+			"title": "Outdoor-space source plan",
+			"description": "The original colour-coded outdoor-space PDF retained for reference, alongside the clearer web guidance page.",
+			"url": "/assets/docs/outside-space-guidance.pdf",
+			"type": "PDF",
+			"ctaLabel": "Download PDF"
+		},
+		{
+			"title": "Sound and lighting guide",
+			"description": "A quick guide to using the stage sound and lighting equipment in the hall.",
+			"url": "/guides/",
+			"type": "Guide",
+			"ctaLabel": "Read guide"
+		},
+		{
+			"title": "Community consultation summary",
+			"description": "A short overview of the 2022 consultation about village life and how the Hub can support it.",
+			"url": "/assets/docs/community-consultation-summary-2022.pdf",
+			"type": "PDF",
+			"ctaLabel": "Download PDF"
+		},
+		{
+			"title": "Community consultation full report",
+			"description": "The complete report for anyone who wants the fuller context behind the consultation findings.",
+			"url": "/assets/docs/community-consultation-full-report-2022.pdf",
+			"type": "PDF",
+			"ctaLabel": "Download PDF"
+		}
+	]
+}

@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: FAQs
+description: Frequently asked questions about hiring and using Flax Bourton Hub.
+---
+<section class="page-hero page-hero--media">
+	<div class="shell page-hero__grid">
+		<div class="page-hero__inner">
+			<p class="eyebrow">Frequently asked questions</p>
+			<h1>Helpful answers before you get in touch.</h1>
+			<p class="lead">Practical answers to common questions about booking, facilities and using the Hub.</p>
+		</div>
+		<div class="page-hero__media" style="background-image: linear-gradient(rgba(19, 93, 76, 0.14), rgba(19, 93, 76, 0.22)), url('/assets/images/activity-meetings.jpg');" aria-hidden="true"></div>
+	</div>
+</section>
+
+<section class="shell section">
+	<div class="faq-list">
+		{% for item in faqs.items %}
+			<details class="faq-item">
+				<summary>{{ item.faqQuestion }}</summary>
+				<div class="prose">
+					<p>{{ item.faqAnswer | safe }}</p>
+				</div>
+			</details>
+		{% endfor %}
+	</div>
+</section>

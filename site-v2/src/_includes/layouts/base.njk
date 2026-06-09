@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{% if title %}{{ title }} | {% endif %}{{ site.name }}</title>
+		<meta name="description" content="{{ description or site.description }}" />
+		<link rel="icon" href="/assets/images/theHubLogo.svg" type="image/svg+xml" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		{{ extraHead | safe }}
+	</head>
+	<body>
+		<a class="skip-link" href="#main-content">Skip to content</a>
+		{% include "partials/header.njk" %}
+		<main id="main-content">{{ content | safe }}</main>
+		{% include "partials/footer.njk" %}
+		<dialog class="booking-dialog" id="booking-leave-dialog" aria-labelledby="booking-leave-title">
+			<div class="booking-dialog__panel">
+				<button class="video-dialog__close" type="button" data-booking-close aria-label="Close booking dialog">Close</button>
+				<p class="eyebrow">Leaving the Hub site</p>
+				<h2 id="booking-leave-title">Continue to HallBookingOnline</h2>
+				<p id="booking-leave-copy">
+					Booking opens on HallBookingOnline in a new tab so you can return here for guidance,
+					documents and contact details after you have finished.
+				</p>
+				<div class="booking-dialog__actions">
+					<button class="button button--secondary" type="button" data-booking-close>Stay on this page</button>
+					<a class="button button--primary" href="#" target="_blank" rel="noopener" data-booking-continue>Open booking site</a>
+				</div>
+			</div>
+		</dialog>
+		{{ extraBodyEnd | safe }}
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const bookingDialog = document.getElementById("booking-leave-dialog");
+				const continueLink = bookingDialog?.querySelector("[data-booking-continue]");
+				const closeButtons = bookingDialog?.querySelectorAll("[data-booking-close]") || [];
+				const bookingLinks = document.querySelectorAll("[data-external-booking]");
+
+				if (!bookingLinks.length) {
+					return;
+				}
+
+				bookingLinks.forEach((link) => {
+					link.addEventListener("click", (event) => {
+						if (!bookingDialog || typeof bookingDialog.showModal !== "function" || !continueLink) {
+							return;
+						}
+
+						event.preventDefault();
+						continueLink.href = link.href;
+						continueLink.textContent = link.dataset.bookingLabel || "Open booking site";
+						bookingDialog.showModal();
+					});
+				});
+
+				closeButtons.forEach((button) => {
+					button.addEventListener("click", () => {
+						bookingDialog?.close();
+					});
+				});
+
+				bookingDialog?.addEventListener("click", (event) => {
+					if (event.target === bookingDialog) {
+						bookingDialog.close();
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

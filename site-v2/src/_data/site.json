@@ -1,0 +1,23 @@
+{
+	"name": "Flax Bourton Hub",
+	"tagline": "A welcoming village hub for events, groups and everyday community life.",
+	"description": "Flax Bourton Hub is the village community space for activities, room hire, local events and practical information for residents, organisers and trustees.",
+	"bookingUrl": "https://hallbookingonline.com/flaxbourton/",
+	"availabilityUrl": "/hire/availability/",
+	"email": "bookings@flaxbourtonhub.org",
+	"charityNumber": "1195804",
+	"location": "Flax Bourton, North Somerset",
+	"navigation": [
+		{ "label": "Home", "url": "/" },
+		{ "label": "What's On", "url": "/activities/" },
+		{ "label": "Hire Information", "url": "/hire/" },
+		{ "label": "Documents", "url": "/documents/" },
+		{ "label": "Trustees", "url": "/about/" },
+		{ "label": "Updates", "url": "/updates/" },
+		{ "label": "FAQs", "url": "/faqs/" },
+		{ "label": "Contact", "url": "/contact/" }
+	],
+	"social": {
+		"twitter": "https://twitter.com/FlaxHub"
+	}
+}

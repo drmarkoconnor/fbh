@@ -1,0 +1,20 @@
+[
+	{
+		"title": "Birthday parties",
+		"summary": "A flexible hall layout, room for food tables and the option of a bouncy castle make the Hub a practical local party venue.",
+		"audience": "Children's parties, family celebrations and community socials",
+		"image": "/assets/images/use-birthday-parties.jpg"
+	},
+	{
+		"title": "Weddings and special occasions",
+		"summary": "The Hub can support exclusive-use celebrations with countryside surroundings and space to shape the day around your plans.",
+		"audience": "Weddings, receptions and milestone celebrations",
+		"image": "/assets/images/use-weddings.jpg"
+	},
+	{
+		"title": "Team meetings and away days",
+		"summary": "The space also works well for local organisations, planning sessions, workshops and team get-togethers.",
+		"audience": "Businesses, charities, parish and volunteer groups",
+		"image": "/assets/images/use-team-meetings.jpg"
+	}
+]

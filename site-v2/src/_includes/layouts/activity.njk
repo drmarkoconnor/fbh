@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+---
+<section class="page-hero">
+	<div class="shell page-hero__inner">
+		<p class="eyebrow">Activity</p>
+		<h1>{{ title }}</h1>
+		<p class="lead">{{ summary }}</p>
+	</div>
+</section>
+
+<article class="shell section two-column">
+	<div class="stack">
+		{% if image %}
+			<img class="feature-image" src="{{ image }}" alt="{{ title }}" />
+		{% endif %}
+		<div class="prose">
+			{{ content | safe }}
+		</div>
+	</div>
+
+	<aside class="panel stack">
+		<h2>At a glance</h2>
+		{% if schedule %}
+			<p><strong>When:</strong><br />{{ schedule }}</p>
+		{% endif %}
+		{% if location %}
+			<p><strong>Where:</strong><br />{{ location }}</p>
+		{% endif %}
+		{% if contactEmail %}
+			<p><strong>Email:</strong><br /><a href="mailto:{{ contactEmail }}">{{ contactEmail }}</a></p>
+		{% endif %}
+		{% if contactPhone %}
+			<p><strong>Phone:</strong><br />{{ contactPhone }}</p>
+		{% endif %}
+		{% if website %}
+			<p><strong>Website:</strong><br /><a href="{{ website }}">{{ website }}</a></p>
+		{% endif %}
+	</aside>
+</article>

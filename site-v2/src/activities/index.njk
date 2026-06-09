@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+title: What's On
+description: Regular activities and community use at Flax Bourton Hub.
+---
+<section class="page-hero page-hero--media">
+	<div class="shell page-hero__grid">
+		<div class="page-hero__inner">
+			<p class="eyebrow">What's on</p>
+			<h1>Activities and community sessions.</h1>
+			<p class="lead">Regular groups, family sessions and special-interest activities taking place at the Hub.</p>
+		</div>
+		<div class="page-hero__media" style="background-image: linear-gradient(rgba(19, 93, 76, 0.14), rgba(19, 93, 76, 0.22)), url('/assets/images/activity-playgroup.jpg');" aria-hidden="true"></div>
+	</div>
+</section>
+
+<section class="shell section listing">
+	{% for activity in collections.activities %}
+		<article class="card listing-card">
+			<div class="two-column">
+				<div class="stack">
+					<h2><a href="{{ activity.url }}">{{ activity.data.title }}</a></h2>
+					<p>{{ activity.data.summary }}</p>
+					<div class="list-meta">
+						{% if activity.data.schedule %}<span><strong>When:</strong> {{ activity.data.schedule }}</span>{% endif %}
+						{% if activity.data.contactEmail %}<span><strong>Email:</strong> {{ activity.data.contactEmail }}</span>{% endif %}
+						{% if activity.data.contactPhone %}<span><strong>Phone:</strong> {{ activity.data.contactPhone }}</span>{% endif %}
+					</div>
+				</div>
+				<div class="stack">
+					{% if activity.data.image %}
+						<img src="{{ activity.data.image }}" alt="{{ activity.data.title }}" />
+					{% endif %}
+					<a class="button button--secondary" href="{{ activity.url }}">View details</a>
+				</div>
+			</div>
+		</article>
+	{% endfor %}
+</section>
+
+<section class="shell section">
+	<div class="note-card stack">
+		<h2>Would your group like to use the Hub?</h2>
+		<p>If you are interested in running a regular activity, get in touch and the trustees can advise on availability and suitability.</p>
+		<p><a class="button button--secondary" href="mailto:{{ site.email }}">Email the Hub</a></p>
+	</div>
+</section>

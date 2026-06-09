@@ -1,0 +1,27 @@
+<footer class="site-footer">
+	<div class="shell footer-grid">
+		<div class="stack">
+			<h2>{{ site.name }}</h2>
+			<p>{{ site.tagline }}</p>
+			<p>{{ site.location }} &middot; Charity {{ site.charityNumber }}</p>
+		</div>
+
+		<div class="stack">
+			<h2>Useful links</h2>
+			<ul class="footer-links">
+				<li><a href="{{ site.availabilityUrl }}">Book the Hub</a></li>
+				<li><a href="/activities/">What's On</a></li>
+				<li><a href="/hire/">Hire information</a></li>
+				<li><a href="/documents/">Documents</a></li>
+				<li><a href="/faqs/">FAQs</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+
+		<div class="stack">
+			<h2>Contact</h2>
+			<p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+			<p><a href="{{ site.social.twitter }}">Twitter / X</a></p>
+		</div>
+	</div>
+</footer>

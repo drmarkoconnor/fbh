@@ -1,0 +1,266 @@
+---
+layout: layouts/base.njk
+title: Home
+description: A faster, clearer and more accessible front door for Flax Bourton Hub.
+---
+<section class="hero">
+	<div class="shell hero-card">
+		<div class="hero-copy">
+			<p class="eyebrow">Flax Bourton, North Somerset</p>
+			<h1>A thriving village hub for activities, hire and community life.</h1>
+			<p class="lead">
+				Find local activities, plan a booking, check practical guidance and keep up
+				with news from the Hub.
+			</p>
+			<div class="hero-actions">
+				<a class="button button--primary" href="{{ site.availabilityUrl }}">Book the Hub</a>
+				<a class="button button--secondary" href="/activities/">See what's on</a>
+				<a class="button button--secondary" href="/documents/">Find documents</a>
+			</div>
+
+			<ul class="stat-list">
+				<li><strong>Bookings</strong><br />Simple access to availability and reservations</li>
+				<li><strong>What's on</strong><br />Regular groups, family sessions and village events</li>
+				<li><strong>Useful guidance</strong><br />Hire details, FAQs and practical documents in one place</li>
+			</ul>
+		</div>
+		<div class="hero-image">
+			<button class="hero-video-inset" type="button" aria-haspopup="dialog" aria-controls="home-video-dialog">
+				<span class="hero-video-frame">
+					<video class="hero-video-preview" autoplay muted loop playsinline preload="metadata">
+						<source src="/assets/video/outside-space-guidance-overlays.mp4" type="video/mp4" />
+					</video>
+				</span>
+				<span class="hero-video-copy">
+					<strong>Outside space guide</strong>
+					<span>Expand video</span>
+				</span>
+			</button>
+		</div>
+	</div>
+</section>
+
+<dialog class="video-dialog" id="home-video-dialog" aria-label="Outside space guidance video">
+	<div class="video-dialog__inner">
+		<button class="video-dialog__close" type="button" data-video-close aria-label="Close video">Close</button>
+		<video class="video-dialog__video" controls playsinline preload="metadata">
+			<source src="/assets/video/outside-space-guidance-overlays.mp4" type="video/mp4" />
+		</video>
+	</div>
+</dialog>
+
+<section class="section">
+	<div class="shell">
+		<div class="section-header">
+			<div class="stack">
+				<p class="eyebrow">Quick routes</p>
+				<h2>Start with the information people need most.</h2>
+			</div>
+		</div>
+		<div class="cta-grid">
+			<article class="cta-card stack">
+				<h3>Book the Hub</h3>
+				<p>Check availability and make a reservation using the Hub's existing booking system.</p>
+				<a class="button button--secondary" href="{{ site.availabilityUrl }}">Check availability</a>
+			</article>
+			<article class="cta-card stack">
+				<h3>Find an activity</h3>
+				<p>See regular groups, family activities and community uses of the Hub in one place.</p>
+				<a class="button button--secondary" href="/activities/">Browse activities</a>
+			</article>
+			<article class="cta-card stack">
+				<h3>Understand how hire works</h3>
+				<p>Get practical guidance on capacity, facilities, documents and the process before you book.</p>
+				<a class="button button--secondary" href="/hire/">View hire information</a>
+			</article>
+		</div>
+	</div>
+</section>
+
+<script>
+	const homeVideoDialog = document.getElementById("home-video-dialog");
+	const homeVideoTrigger = document.querySelector(".hero-video-inset");
+	const homeVideoPreview = document.querySelector(".hero-video-preview");
+	const homeVideoExpanded = homeVideoDialog?.querySelector(".video-dialog__video");
+	const homeVideoClose = homeVideoDialog?.querySelector("[data-video-close]");
+
+	if (homeVideoDialog && homeVideoTrigger && homeVideoExpanded) {
+		homeVideoTrigger.addEventListener("click", () => {
+			if (typeof homeVideoDialog.showModal !== "function") {
+				window.open("/assets/video/outside-space-guidance-overlays.mp4", "_blank", "noopener");
+				return;
+			}
+
+			if (homeVideoPreview) {
+				homeVideoExpanded.currentTime = homeVideoPreview.currentTime || 0;
+			}
+
+			homeVideoDialog.showModal();
+			homeVideoExpanded.play().catch(() => {});
+		});
+
+		homeVideoClose?.addEventListener("click", () => {
+			homeVideoDialog.close();
+		});
+
+		homeVideoDialog.addEventListener("click", (event) => {
+			const bounds = homeVideoDialog.getBoundingClientRect();
+			const isBackdropClick =
+				event.clientX < bounds.left ||
+				event.clientX > bounds.right ||
+				event.clientY < bounds.top ||
+				event.clientY > bounds.bottom;
+
+			if (isBackdropClick) {
+				homeVideoDialog.close();
+			}
+		});
+
+		homeVideoDialog.addEventListener("close", () => {
+			homeVideoExpanded.pause();
+		});
+	}
+</script>
+
+<section class="section">
+	<div class="shell">
+		<div class="section-header">
+			<div class="stack">
+				<p class="eyebrow">Featured activities</p>
+				<h2>A community-led programme, with room to grow.</h2>
+			</div>
+			<a href="/activities/">See all activities</a>
+		</div>
+
+		<div class="card-grid">
+			{% for activity in collections.featuredActivities %}
+				<article class="card">
+					{% if activity.data.image %}
+						<img src="{{ activity.data.image }}" alt="{{ activity.data.title }}" />
+					{% endif %}
+					<h3><a href="{{ activity.url }}">{{ activity.data.title }}</a></h3>
+					<p>{{ activity.data.summary }}</p>
+					<p><strong>When:</strong> {{ activity.data.schedule }}</p>
+					<a class="button button--secondary" href="{{ activity.url }}">View activity</a>
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="shell">
+		<div class="section-header">
+			<div class="stack">
+				<p class="eyebrow">Ways people use the Hub</p>
+				<h2>Flexible space for everyday village life and special occasions.</h2>
+			</div>
+			<a href="/hire/">Explore hire information</a>
+		</div>
+
+		<div class="card-grid">
+			{% for use in venueUses %}
+				<article class="card">
+					{% if use.image %}
+						<img src="{{ use.image }}" alt="{{ use.title }}" />
+					{% endif %}
+					<h3>{{ use.title }}</h3>
+					<p>{{ use.summary }}</p>
+					<p><strong>Best for:</strong> {{ use.audience }}</p>
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="shell">
+		<div class="section-header">
+			<div class="stack">
+				<p class="eyebrow">Latest updates</p>
+				<h2>News, notices and community updates.</h2>
+			</div>
+			<a href="/updates/">All updates</a>
+		</div>
+
+		<div class="summary-grid">
+			{% for post in collections.latestUpdates %}
+				<article class="summary">
+					<p class="meta">{{ post.date | readableDate }}</p>
+					<h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+					<p>{{ post.data.summary }}</p>
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="shell">
+		<div class="section-header">
+			<div class="stack">
+				<p class="eyebrow">Practical information</p>
+				<h2>Important guidance is easier to find.</h2>
+			</div>
+		</div>
+		<div class="summary-grid">
+			<article class="summary">
+				<h3>Documents and guides</h3>
+				<p>Collect reports, policies and hire guidance into one clearer document area.</p>
+				<a href="/documents/">Open document centre</a>
+			</article>
+			<article class="summary">
+				<h3>Trustees and governance</h3>
+				<p>Find out how the Hub is run and who looks after the charity on behalf of the village.</p>
+				<a href="/about/">Meet the trustees</a>
+			</article>
+			<article class="summary">
+				<h3>Questions before you book?</h3>
+				<p>Capacity, facilities, Wi-Fi, music, kitchen use and practical details are all easier to scan.</p>
+				<a href="/faqs/">Read FAQs</a>
+			</article>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="shell">
+		<div class="cta-grid">
+			<article class="cta-card stack">
+				<h3>Planning an event?</h3>
+				<p>Read the hire guidance before you book so capacity, facilities and practical arrangements are clear.</p>
+				<a class="button button--secondary" href="/hire/">View hire information</a>
+			</article>
+			<article class="cta-card stack">
+				<h3>Need key documents?</h3>
+				<p>Open the document centre for hire guides, policies, reports and supporting downloads.</p>
+				<a class="button button--secondary" href="/documents/">Open document centre</a>
+			</article>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="shell">
+		<div class="section-header">
+			<div class="stack">
+				<p class="eyebrow">FAQ preview</p>
+				<h2>Core questions, answered quickly.</h2>
+			</div>
+			<a href="/faqs/">View all FAQs</a>
+		</div>
+
+		<div class="faq-list">
+			{% for item in faqs %}
+				{% if loop.index0 < 4 %}
+					<details class="faq-item">
+						<summary>{{ item.faqQuestion }}</summary>
+						<div class="prose">
+							<p>{{ item.faqAnswer | safe }}</p>
+						</div>
+					</details>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>

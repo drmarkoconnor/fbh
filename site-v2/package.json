@@ -1,0 +1,17 @@
+{
+  "name": "site-v2",
+  "version": "1.0.0",
+  "description": "Flax Bourton Hub phase 1 overhaul site",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "cms": "decap-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "decap-server": "^3.9.0"
+  }
+}

@@ -1,0 +1,68 @@
+{
+	"items": [
+		{
+			"image": "/assets/images/venue-gallery/img_6.jpg",
+			"title": "Main hall from the entrance side",
+			"alt": "General view of the main hall at Flax Bourton Hub.",
+			"caption": "A broad first view of the main hall, showing the open floor area that can be arranged for celebrations, talks, classes and community events.",
+			"relatedUrl": "/hire/",
+			"relatedLabel": "Hire overview"
+		},
+		{
+			"image": "/assets/images/venue-gallery/img_2.jpg",
+			"title": "Main hall north view",
+			"alt": "Main hall viewed towards the north end of the room.",
+			"caption": "A longer view across the main hall, useful for judging circulation space, table layout and standing room.",
+			"relatedUrl": "/hire/layout-and-outdoor-spaces/",
+			"relatedLabel": "Layout and room guide"
+		},
+		{
+			"image": "/assets/images/venue-gallery/img_3.jpg",
+			"title": "Stage end of the hall",
+			"alt": "Main hall viewed towards the stage end of the room.",
+			"caption": "The stage end of the hall, where the permanent sound and lighting setup becomes most relevant for performances, assemblies and presentations.",
+			"relatedUrl": "/guides/",
+			"relatedLabel": "Sound and lighting guide"
+		},
+		{
+			"image": "/assets/images/venue-gallery/img_1.jpg",
+			"title": "Kitchen and serving area",
+			"alt": "Kitchen area with worktops and serving access for the hall.",
+			"caption": "The kitchen supports refreshments and event catering, with serving access back into the hall.",
+			"relatedUrl": "/hire/facilities-and-equipment/",
+			"relatedLabel": "Facilities and equipment"
+		},
+		{
+			"image": "/assets/images/venue-gallery/img_7.jpg",
+			"title": "Serving hatches into the hall",
+			"alt": "Serving hatches linking the kitchen and the main hall.",
+			"caption": "A closer look at the serving hatches between the kitchen and main hall for events where food or drinks need to move quickly.",
+			"relatedUrl": "/hire/facilities-and-equipment/",
+			"relatedLabel": "Kitchen details"
+		},
+		{
+			"image": "/assets/images/venue-gallery/img_8.jpg",
+			"title": "Partitioned hall layout",
+			"alt": "Main hall with a partition creating a smaller activity area.",
+			"caption": "A smaller, more contained setup created inside the main hall, which can work well for classes, meetings and lighter-touch community use.",
+			"relatedUrl": "/hire/facilities-and-equipment/",
+			"relatedLabel": "Flexible hall setup"
+		},
+		{
+			"image": "/assets/images/venue-gallery/img_5.jpg",
+			"title": "Small meeting room",
+			"alt": "Small meeting room at Flax Bourton Hub.",
+			"caption": "The smaller meeting room off the corridor is suitable for meetings of up to 8 people.",
+			"relatedUrl": "/hire/layout-and-outdoor-spaces/",
+			"relatedLabel": "Room layout guide"
+		},
+		{
+			"image": "/assets/images/venue-gallery/img_4.jpg",
+			"title": "Outside setting and sports areas",
+			"alt": "Outside park area, toddler playground and football pitch near Flax Bourton Hub.",
+			"caption": "The setting around the Hub helps visitors orient themselves, but private hire does not extend to the surrounding outside areas and the football pitch remains for properly affiliated sports use only.",
+			"relatedUrl": "/hire/layout-and-outdoor-spaces/",
+			"relatedLabel": "Outdoor space policy"
+		}
+	]
+}

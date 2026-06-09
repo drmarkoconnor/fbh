@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+<article class="page-hero article-hero">
+	<div class="shell page-hero__inner">
+		<p class="eyebrow">Hub update</p>
+		<h1>{{ title }}</h1>
+		<p class="meta">{{ date | readableDate }}</p>
+		{% if summary %}
+			<p class="lead">{{ summary }}</p>
+		{% endif %}
+	</div>
+</article>
+
+<section class="shell section article">
+	{% if image %}
+		<img class="feature-image" src="{{ image }}" alt="{{ title }}" />
+	{% endif %}
+	<div class="prose">
+		{{ content | safe }}
+	</div>
+</section>

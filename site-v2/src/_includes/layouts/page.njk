@@ -1,0 +1,79 @@
+---
+layout: layouts/base.njk
+---
+<section class="page-hero{% if pageHeroImage %} page-hero--media{% endif %}">
+	<div class="shell{% if pageHeroImage %} page-hero__grid{% else %} page-hero__inner{% endif %}">
+		<div class="page-hero__inner">
+			<p class="eyebrow">{{ sectionLabel or "Information" }}</p>
+			<h1>{{ title }}</h1>
+			{% if intro %}
+				<p class="lead">{{ intro }}</p>
+			{% endif %}
+		</div>
+		{% if pageHeroImage %}
+			<div class="page-hero__media" style="background-image: linear-gradient(rgba(19, 93, 76, 0.14), rgba(19, 93, 76, 0.22)), url('{{ pageHeroImage }}');" aria-hidden="true"></div>
+		{% endif %}
+	</div>
+</section>
+
+<section class="shell section prose">
+	{{ content | safe }}
+</section>
+
+{% if showVenueUses %}
+	<section class="shell section">
+		<div class="section-header">
+			<div class="stack">
+				<p class="eyebrow">Popular ways to use the Hub</p>
+				<h2>From family celebrations to practical village meetings.</h2>
+			</div>
+		</div>
+
+		<div class="card-grid">
+			{% for item in venueUses %}
+				<article class="card">
+					{% if item.image %}
+						<img src="{{ item.image }}" alt="{{ item.title }}" />
+					{% endif %}
+					<h3>{{ item.title }}</h3>
+					<p>{{ item.summary }}</p>
+					<p><strong>Best for:</strong> {{ item.audience }}</p>
+				</article>
+			{% endfor %}
+		</div>
+	</section>
+{% endif %}
+
+{% if showTrustees %}
+	<section class="shell section">
+		<div class="section-header">
+			<div class="stack">
+				<p class="eyebrow">Trustees</p>
+				<h2>Stewardship, governance and local oversight.</h2>
+			</div>
+		</div>
+
+		{% if trustees.items | length %}
+			<div class="card-grid trustee-grid">
+				{% for person in trustees.items %}
+					<article class="card stack trustee-card">
+						{% if person.image %}
+							<img class="trustee-photo" src="{{ person.image }}" alt="{{ person.name }}" />
+						{% endif %}
+						<h3>{{ person.name }}</h3>
+						<p class="meta">{{ person.role }}</p>
+						<p>{{ person.bio }}</p>
+						{% if person.email %}
+							<p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+						{% endif %}
+					</article>
+				{% endfor %}
+			</div>
+		{% else %}
+			<div class="note-card stack">
+				<h3>Trustee profiles will appear here.</h3>
+				<p>Named trustee profiles, roles and contact details can be added here as they are confirmed.</p>
+			</div>
+		{% endif %}
+	</section>
+{% endif %}

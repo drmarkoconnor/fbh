@@ -1,0 +1,82 @@
+---
+layout: layouts/base.njk
+title: Hall gallery
+description: A photo guide to the main hall, meeting room, kitchen and setting around Flax Bourton Hub.
+---
+<section class="page-hero page-hero--media">
+	<div class="shell page-hero__grid">
+		<div class="page-hero__inner">
+			<p class="eyebrow">Venue gallery</p>
+			<h1>See the Hub before you book.</h1>
+			<p class="lead">
+				A photo guide to the main hall, small meeting room, kitchen and setting around the
+				Hub, with quick links back to the practical hire guidance.
+			</p>
+			<div class="document-actions">
+				<a class="button button--primary" href="/hire/availability/">Check availability</a>
+				<a class="button button--secondary" href="/hire/availability/">View the availability calendar</a>
+			</div>
+		</div>
+		<div class="page-hero__media" style="background-image: linear-gradient(rgba(19, 93, 76, 0.14), rgba(19, 93, 76, 0.22)), url('/assets/images/venue-gallery/img_6.jpg');" aria-hidden="true"></div>
+	</div>
+</section>
+
+<section class="shell section">
+	<div class="card-grid gallery-shortcuts">
+		<article class="card stack">
+			<p class="eyebrow">Layout</p>
+			<h2>Room layout and outside spaces</h2>
+			<p>Use the simplified layout guide alongside the gallery if you want the room-by-room explanation.</p>
+			<a class="button button--secondary" href="/hire/layout-and-outdoor-spaces/">Open layout guide</a>
+		</article>
+		<article class="card stack">
+			<p class="eyebrow">Facilities</p>
+			<h2>Kitchen, tables and equipment</h2>
+			<p>Check the facilities guide for the practical details behind the photos.</p>
+			<a class="button button--secondary" href="/hire/facilities-and-equipment/">Open facilities guide</a>
+		</article>
+		<article class="card stack">
+			<p class="eyebrow">Find us</p>
+			<h2>Maps and arrival</h2>
+			<p>Use the map and arrival guidance to plan access, parking and handover arrangements.</p>
+			<div class="document-actions">
+				<a class="button button--secondary" href="/hire/access-and-arrival/">Access guide</a>
+				<a class="button button--ghost" href="{{ bookingCalendar.mapsUrl }}">Open map</a>
+			</div>
+		</article>
+	</div>
+</section>
+
+<section class="shell section">
+	<div class="section-header">
+		<div class="stack">
+			<p class="eyebrow">Photo guide</p>
+			<h2>A more visual way to explore the venue.</h2>
+		</div>
+	</div>
+
+	<div class="masonry-gallery">
+		{% for item in venueGallery.items %}
+			<figure class="gallery-figure card">
+				<img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy" decoding="async" />
+				<figcaption class="stack">
+					<p class="eyebrow">Photo {{ loop.index }}</p>
+					<h3>{{ item.title }}</h3>
+					<p>{{ item.caption }}</p>
+					<p><a class="gallery-figure__link" href="{{ item.relatedUrl }}">{{ item.relatedLabel }}</a></p>
+				</figcaption>
+			</figure>
+		{% endfor %}
+	</div>
+</section>
+
+<section class="shell section">
+	<div class="note-card stack">
+		<h2>Important note on outside areas</h2>
+		<p>
+			The outside photos are included for orientation and context. They do not change the current
+			hire policy: private bookings do not include the surrounding outside spaces, and the football
+			pitch remains limited to properly affiliated sports teams using it for training or matches.
+		</p>
+	</div>
+</section>

@@ -1,0 +1,165 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "updates"
+    label: "Updates"
+    folder: "src/content/updates"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Publish date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Hero image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "activities"
+    label: "Activities"
+    folder: "src/content/activities"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Display order", name: "order", widget: "number", value_type: "int", default: 10 }
+      - { label: "Featured on home", name: "featured", widget: "boolean", default: false }
+      - { label: "Schedule", name: "schedule", widget: "string", required: false }
+      - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Contact email", name: "contactEmail", widget: "string", required: false }
+      - { label: "Contact phone", name: "contactPhone", widget: "string", required: false }
+      - { label: "Website", name: "website", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Key pages"
+    files:
+      - label: "About / trustees"
+        name: "about"
+        file: "src/content/pages/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/about/" }
+          - { label: "Section label", name: "sectionLabel", widget: "hidden", default: "About" }
+          - { label: "Hero image", name: "pageHeroImage", widget: "hidden", default: "/assets/images/uploads/us-30.jpg" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Hire information"
+        name: "hire"
+        file: "src/content/pages/hire.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/hire/" }
+          - { label: "Section label", name: "sectionLabel", widget: "hidden", default: "Hiring the Hub" }
+          - { label: "Hero image", name: "pageHeroImage", widget: "hidden", default: "/assets/images/hub-exterior.jpg" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Access and arrival"
+        name: "access-and-arrival"
+        file: "src/content/pages/access-and-arrival.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/hire/access-and-arrival/" }
+          - { label: "Section label", name: "sectionLabel", widget: "hidden", default: "Hire guide" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Hall facilities and equipment"
+        name: "facilities-and-equipment"
+        file: "src/content/pages/facilities-and-equipment.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/hire/facilities-and-equipment/" }
+          - { label: "Section label", name: "sectionLabel", widget: "hidden", default: "Hire guide" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Layout and outdoor spaces"
+        name: "layout-and-outdoor-spaces"
+        file: "src/content/pages/layout-and-outdoor-spaces.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/hire/layout-and-outdoor-spaces/" }
+          - { label: "Section label", name: "sectionLabel", widget: "hidden", default: "Hire guide" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Terms and conditions of hire"
+        name: "terms-and-conditions"
+        file: "src/content/pages/terms-and-conditions.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/hire/terms-and-conditions/" }
+          - { label: "Section label", name: "sectionLabel", widget: "hidden", default: "Hire guide" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "src/content/pages/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/contact/" }
+          - { label: "Section label", name: "sectionLabel", widget: "hidden", default: "Contact" }
+          - { label: "Hero image", name: "pageHeroImage", widget: "hidden", default: "/assets/images/hub-exterior.jpg" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "structured-content"
+    label: "Structured content"
+    files:
+      - label: "FAQs"
+        name: "faqs"
+        file: "src/_data/faqs.json"
+        fields:
+          - label: "FAQ items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.faqQuestion}}"
+            fields:
+              - { label: "Question", name: "faqQuestion", widget: "string" }
+              - { label: "Answer", name: "faqAnswer", widget: "markdown" }
+      - label: "Documents"
+        name: "documents"
+        file: "src/_data/documents.json"
+        fields:
+          - label: "Document items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+               - { label: "Title", name: "title", widget: "string" }
+               - { label: "Description", name: "description", widget: "text" }
+               - { label: "URL", name: "url", widget: "string" }
+               - { label: "Type", name: "type", widget: "string" }
+               - { label: "CTA label", name: "ctaLabel", widget: "string", required: false }
+               - { label: "Download URL", name: "downloadUrl", widget: "string", required: false }
+               - { label: "Download label", name: "downloadLabel", widget: "string", required: false }
+      - label: "Trustees"
+        name: "trustees"
+        file: "src/_data/trustees.json"
+        fields:
+          - label: "Trustee profiles"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Biography", name: "bio", widget: "text" }
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Photo", name: "image", widget: "image", required: false }
