@@ -5,6 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{% if title %}{{ title }} | {% endif %}{{ site.name }}</title>
 		<meta name="description" content="{{ description or site.description }}" />
+		<script>
+			(() => {
+				const hash = window.location.hash || "";
+				const isIdentityToken = /(invite_token|recovery_token|confirmation_token|email_change_token)=/.test(hash);
+				const isAdminRoute = window.location.pathname.startsWith("/admin/");
+
+				if (isIdentityToken && !isAdminRoute) {
+					window.location.replace(`/admin/${window.location.search}${hash}`);
+				}
+			})();
+		</script>
 		<link rel="icon" href="/assets/images/theHubLogo.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		{{ extraHead | safe }}
