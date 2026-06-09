@@ -1,6 +1,7 @@
 ---
-title: Welcome to the Flax Bourton Hub website
-summary: Find booking information, activities, practical guidance and Hub news in one clearer place.
+title: Welcome to the Flax Bourton Hub
+summary: Find booking information, activities, practical guidance and Hub news
+  in one clearer place.
 date: 2026-06-09
 image: /assets/images/update-community.jpg
 ---
