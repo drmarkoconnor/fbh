@@ -2,7 +2,7 @@
 title: Flax Bourton Hub website refresh
 summary: A brand new website - Our booking system remains the same and just as simple
 date: 2026-06-09
-image: /assets/images/uploads/fbh-78.jpg
+image: /assets/images/fbh-78.jpg
 ---
 **We are pleased** to share that the Flax Bourton Hub website has now been refreshed to make it clearer, easier to use and easier to keep up to date.
 

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy",
-    "cms": "decap-server"
+    "cms": "cd .. && site-v2/node_modules/.bin/decap-server"
   },
   "keywords": [],
   "author": "",

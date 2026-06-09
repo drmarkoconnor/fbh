@@ -4,13 +4,13 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "src/assets/images/uploads"
+media_folder: "site-v2/src/assets/images/uploads"
 public_folder: "/assets/images/uploads"
 
 collections:
   - name: "updates"
     label: "Updates"
-    folder: "src/content/updates"
+    folder: "site-v2/src/content/updates"
     create: true
     slug: "{{slug}}"
     format: "frontmatter"
@@ -24,7 +24,7 @@ collections:
 
   - name: "activities"
     label: "Activities"
-    folder: "src/content/activities"
+    folder: "site-v2/src/content/activities"
     create: true
     slug: "{{slug}}"
     format: "frontmatter"
@@ -47,7 +47,7 @@ collections:
     files:
       - label: "About / trustees"
         name: "about"
-        file: "src/content/pages/about.md"
+        file: "site-v2/src/content/pages/about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -58,7 +58,7 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Hire information"
         name: "hire"
-        file: "src/content/pages/hire.md"
+        file: "site-v2/src/content/pages/hire.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -69,7 +69,7 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Access and arrival"
         name: "access-and-arrival"
-        file: "src/content/pages/access-and-arrival.md"
+        file: "site-v2/src/content/pages/access-and-arrival.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -79,7 +79,7 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Hall facilities and equipment"
         name: "facilities-and-equipment"
-        file: "src/content/pages/facilities-and-equipment.md"
+        file: "site-v2/src/content/pages/facilities-and-equipment.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -89,7 +89,7 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Layout and outdoor spaces"
         name: "layout-and-outdoor-spaces"
-        file: "src/content/pages/layout-and-outdoor-spaces.md"
+        file: "site-v2/src/content/pages/layout-and-outdoor-spaces.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -99,7 +99,7 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Terms and conditions of hire"
         name: "terms-and-conditions"
-        file: "src/content/pages/terms-and-conditions.md"
+        file: "site-v2/src/content/pages/terms-and-conditions.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -109,7 +109,7 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Contact"
         name: "contact"
-        file: "src/content/pages/contact.md"
+        file: "site-v2/src/content/pages/contact.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -124,7 +124,7 @@ collections:
     files:
       - label: "FAQs"
         name: "faqs"
-        file: "src/_data/faqs.json"
+        file: "site-v2/src/_data/faqs.json"
         fields:
           - label: "FAQ items"
             name: "items"
@@ -135,7 +135,7 @@ collections:
               - { label: "Answer", name: "faqAnswer", widget: "markdown" }
       - label: "Documents"
         name: "documents"
-        file: "src/_data/documents.json"
+        file: "site-v2/src/_data/documents.json"
         fields:
           - label: "Document items"
             name: "items"
@@ -151,7 +151,7 @@ collections:
                - { label: "Download label", name: "downloadLabel", widget: "string", required: false }
       - label: "Trustees"
         name: "trustees"
-        file: "src/_data/trustees.json"
+        file: "site-v2/src/_data/trustees.json"
         fields:
           - label: "Trustee profiles"
             name: "items"
