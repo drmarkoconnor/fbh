@@ -251,7 +251,7 @@ description: A faster, clearer and more accessible front door for Flax Bourton H
 		</div>
 
 		<div class="faq-list">
-			{% for item in faqs %}
+			{% for item in faqs.items %}
 				{% if loop.index0 < 4 %}
 					<details class="faq-item">
 						<summary>{{ item.faqQuestion }}</summary>

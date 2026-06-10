@@ -2,6 +2,10 @@
 
 This folder contains the phase 1 rebuild of the Flax Bourton Hub site.
 
+The repository root is intentionally slim. Netlify builds from this folder via
+the root `netlify.toml`, so future development should happen here unless the
+deployment model changes.
+
 ## Local development
 
 1. `npm install`
@@ -9,6 +13,9 @@ This folder contains the phase 1 rebuild of the Flax Bourton Hub site.
 3. `npm run cms`
 
 The site preview runs on `http://127.0.0.1:8080` and the local CMS proxy runs on `http://127.0.0.1:8081`.
+
+Run commands from this `site-v2/` directory so local builds use the locked
+Eleventy dependency rather than any globally installed `eleventy` binary.
 
 ## Live trustee access
 
@@ -29,6 +36,26 @@ Local development still uses `local_backend: true`, so the `npm run cms` proxy r
 - structured FAQs, documents and trustee profile data;
 - improved accessibility and lighter assets;
 - third-party booking kept in place for safety.
+
+## Cleanup handoff
+
+On 2026-06-10, after the v2 overhaul, the legacy root-level Eleventy site was
+moved out of the Git repository to:
+
+`/Users/moc/repos/simple-template-legacy-archive-2026-06-10`
+
+That archive contains the old root `_site/`, root assets, old Liquid includes,
+old root content, old root package files and two unused v2 images:
+
+- `site-v2/src/assets/images/fbh-84.jpg`
+- `site-v2/src/assets/images/hero-community.jpg`
+
+Keep active work in `site-v2/`. The archive is only for local recovery or
+historical reference and should not be copied back into the repository unless a
+specific asset or page is intentionally restored.
+
+Also note that FAQ data is shaped as `faqs.items`. The home page FAQ preview and
+the `/faqs/` page should both use that shape.
 
 ## Next content to migrate
 
