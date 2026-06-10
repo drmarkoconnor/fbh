@@ -2,8 +2,7 @@
 title: Beats Dance
 summary: |-
   Weekly dance sessions for children of all abilities.
-
-  Suitable age range from 2.5yrs-18yrs.
+  Age range from 2.5yrs-18yrs.
 
   Taught by a friendly & nurturing teacher with over 16yrs of experience.
 order: 1
