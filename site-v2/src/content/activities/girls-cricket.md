@@ -13,12 +13,8 @@ contactEmail: beatsdance10@gmail.com
 website: https://www.facebook.com/beatsdance10
 image: /assets/images/uploads/beatsdance.jpeg
 ---
-Dancing has so many benefits.  It builds confidence, boosts muscle memory, promotes creativity and creates friendships and more.
-
-
+Dancing has so many benefits.  It builds confidence, boosts muscle memory, promotes creativity, all whilst creating friendships and more.
 
 Children learn in a fun, relaxed and caring environment.  They develop their technique and build their individual style.
-
-
 
 Contact Beats Dance for more information.
