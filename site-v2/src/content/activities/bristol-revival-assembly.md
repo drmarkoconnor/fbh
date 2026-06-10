@@ -2,10 +2,11 @@
 title: Bristol Revival Assembly
 summary: Regular faith gatherings and Bible teaching sessions hosted at the Hub.
 order: 12
-schedule: Wednesdays at 19:45 and Sundays at 15:00 and 18:30
-contactEmail: bristolrevivalassembly@gmail.com
-contactPhone: 07851121312
+featured: true
+schedule: Wednesdays at 7.45pm and Sundays at 3pm and 6.30pm
 location: Flax Bourton Hub
+contactEmail: bristolrevivalassembly@gmail.com
+contactPhone: 7851121312
 image: /assets/images/activity-revival.jpg
 ---
 
