@@ -2,7 +2,7 @@
 title: DJ Kool Kids Parties
 summary: High-energy party entertainment for children's events, schools and
   community celebrations.
-order: 12
+order: 9
 featured: true
 schedule: Private bookings available by arrangement
 location: Flax Bourton Hub
