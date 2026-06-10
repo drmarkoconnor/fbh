@@ -1,11 +1,12 @@
 ---
-title: Team meetings and away days
-summary: The Hub is also a practical venue for work meetings, local groups and planning sessions.
+title: Team Meetings & Away Days
+summary: The Hub is also a practical venue for work meetings, local groups and
+  planning sessions.
 order: 3
 featured: true
 schedule: Flexible, subject to booking availability
-contactEmail: bookings@flaxbourtonhub.org
 location: Flax Bourton Hub
+contactEmail: bookings@flaxbourtonhub.org
 image: /assets/images/activity-meetings.jpg
 ---
 
