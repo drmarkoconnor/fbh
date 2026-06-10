@@ -6,7 +6,7 @@ summary: |-
   Suitable age range from 2.5yrs-18yrs.
 
   Taught by a friendly & nurturing teacher with over 16yrs of experience.
-order: 8
+order: 1
 featured: true
 schedule: Wednesdays 5.15pm-7.15pm
 location: Flax Bourton Hub
