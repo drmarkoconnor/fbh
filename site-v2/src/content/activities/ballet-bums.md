@@ -1,7 +1,7 @@
 ---
 title: Charlotte Clarke Pilates
 summary: Mixed ability Pilates class.  Contact Charlotte for more information.
-order: 5
+order: 3
 featured: true
 schedule: Tuesday Evenings - 6.00pm-8.00pm
 location: Flax Bourton Hub
