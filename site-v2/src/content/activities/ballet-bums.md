@@ -8,7 +8,7 @@ location: Flax Bourton Hub
 contactEmail: me@charlotte-clarke.com
 contactPhone: ""
 website: ""
-image: /assets/images/uploads/cc-pilates.jpeg
+image: /assets/images/uploads/cc-pilates-1-.jpeg
 ---
 
 
