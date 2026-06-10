@@ -2,7 +2,7 @@
 title: Kids Community Football
 summary: Inclusive football sessions that help children build confidence,
   relationships and enjoyment of sport.
-order: 7
+order: 6
 featured: true
 schedule: Dates vary; contact organiser for current sessions
 location: Flax Bourton area
