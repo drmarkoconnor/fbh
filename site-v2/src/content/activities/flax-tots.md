@@ -7,7 +7,7 @@ featured: true
 schedule: Monday mornings, 10:00 to 11:30
 location: Flax Bourton Hub
 contactEmail: info@flaxbourtonhub.org
-image: /assets/images/activity-playgroup.jpg
+image: /assets/images/uploads/flax-tots.jpeg
 ---
 Flax Tots gives local families an easy reason to gather, play and meet one another in the village.
 
