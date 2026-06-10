@@ -2,7 +2,7 @@
 title: Rachael James Pilates
 summary: A welcoming Pilates class focused on strength, flexibility, posture and
   wellbeing.
-order: 1
+order: 7
 featured: true
 schedule: Mondays - 12.00pm to 2.00pm (during term time)
 location: Flax Bourton Hub
