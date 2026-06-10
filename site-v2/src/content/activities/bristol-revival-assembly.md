@@ -6,7 +6,7 @@ featured: true
 schedule: Wednesdays at 7.45pm and Sundays at 3pm and 6.30pm
 location: Flax Bourton Hub
 contactEmail: bristolrevivalassembly@gmail.com
-contactPhone: 7851121312
+contactPhone: ""
 image: /assets/images/activity-revival.jpg
 ---
 
