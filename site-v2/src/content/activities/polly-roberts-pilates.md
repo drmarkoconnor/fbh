@@ -13,7 +13,7 @@ contactEmail: pollyrobertsphysio@gmail.com
 website: pollyrobertsmovement.co.uk
 image: /assets/images/uploads/polly7.jpeg
 ---
-Thursday - 
+Thursday 6.30pm-8.30pm - enquire for details
 
 Friday 9.30am-10.25am - Physio-led Pilates - mixed level
 
