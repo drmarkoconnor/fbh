@@ -9,5 +9,4 @@ contactEmail: bristolrevivalassembly@gmail.com
 contactPhone: ""
 image: /assets/images/activity-revival.jpg
 ---
-
-Bristol Revival Assembly uses the Hub for regular gatherings and is one of the examples of how the venue supports a broad range of community and faith-based use.
+Bristol Revival Assembly uses the Hub for regular gatherings, and is one of the examples of how the venue supports a broad range of community and faith-based use.
