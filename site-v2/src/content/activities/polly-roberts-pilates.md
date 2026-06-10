@@ -11,7 +11,7 @@ featured: true
 location: Flax Bourton Hub
 contactEmail: pollyrobertsphysio@gmail.com
 website: pollyrobertsmovement.co.uk
-image: /assets/images/uploads/polly.jpeg
+image: /assets/images/uploads/polly2.jpeg
 ---
 Thursday - 
 
