@@ -2,7 +2,7 @@
 title: Flax Tots
 summary: "A friendly local playgroup for babies, toddlers and the adults who
   look after them.  "
-order: 2
+order: 5
 featured: true
 schedule: Monday mornings, 10:00 to 11:30
 location: Flax Bourton Hub
