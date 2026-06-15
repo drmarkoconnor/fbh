@@ -1,11 +1,11 @@
 ---
-layout: layouts/page.njk
 title: Layout and outdoor spaces
+intro: A simpler overview of the building layout, plus the updated position on
+  outdoor areas around the Hub.
+layout: layouts/page.njk
 permalink: /hire/layout-and-outdoor-spaces/
 sectionLabel: Hire guide
-intro: A simpler overview of the building layout, plus the updated position on outdoor areas around the Hub.
 ---
-
 <p>
   <a class="button button--primary" href="/assets/docs/hall-floor-plan.pdf">Download floor plan PDF</a>
   <a class="button button--secondary" href="/assets/docs/outside-space-guidance.pdf">Download outdoor-space PDF</a>
@@ -16,10 +16,16 @@ This page replaces two harder-to-read PDFs with a simpler summary. The downloada
 <div class="note-card stack">
   <h3>Updated outdoor-space policy</h3>
   <p>
-    The parish council does not permit the hire of outdoor spaces around the Hub for private events.
+    The Parish Council does not permit the hire of outdoor spaces around the Hub for private events.
     The football pitch is not available for family parties or general overflow use. It may only be used
     by properly organised sports teams registered with a recognised sporting association, and then only
     for matches or training sessions.
+
+Parish Council Guidelines for hire of outside space are:-
+
+**The field adjoining the village hall is owned by Flax Bourton Parish Council and is classed as Permitted Open Space for the enjoyment of the community, but is not Public Open Space. The use of the field is at the discretion of the Parish Council.  It has been agreed with the Hub CIO that the squared off section of grass outside the main entrance of the hall can be included in the hall hire together with a 3-metre margin around the hall, still maintaining public access along the existing path. The marked-out sports pitch can be hired separately for organised sports only, but this does not include the rest of the field. The public liability insurance of the Parish Council does not cover organised events.   Organised community events on the field may be permitted at the discretion of the Parish Council subject to evidence by the organisers of events' insurance and a nominated person supervising the event at all times. The field is not available for privately organised events to which the public does not have access. Any activities on the field must not impose unacceptably on neighbouring residences.**  
+
+
   </p>
 </div>
 
@@ -71,10 +77,10 @@ This page replaces two harder-to-read PDFs with a simpler summary. The downloada
 
 ## What your hall booking covers
 
-- The indoor hall spaces are the core bookable part of the venue.
-- A smaller meeting room sits off the corridor and is suitable for meetings of up to 8 people.
-- The floor plan PDF remains available if you need the original drawing for detailed measurements.
-- If your event needs extra tables, chairs or storage access, arrange that before the day of hire.
+* The indoor hall spaces are the core bookable part of the venue.
+* A smaller meeting room sits off the corridor and is suitable for meetings of up to 8 people.
+* The floor plan PDF remains available if you need the original drawing for detailed measurements.
+* If your event needs extra tables, chairs or storage access, arrange that before the day of hire.
 
 ## Outdoor areas around the Hub
 
@@ -98,6 +104,6 @@ This page replaces two harder-to-read PDFs with a simpler summary. The downloada
 
 ## A clearer way to plan
 
-- Keep your guest plans within the indoor venue unless the trustees have confirmed a specific operational exception.
-- Use the [terms and conditions of hire](/hire/terms-and-conditions/) for the wider rules on safety, noise and responsible use.
-- Contact [bookings@flaxbourtonhub.org](mailto:bookings@flaxbourtonhub.org) if your event layout depends on something not covered here.
+* Keep your guest plans within the indoor venue unless the trustees have confirmed a specific operational exception.
+* Use the [terms and conditions of hire](/hire/terms-and-conditions/) for the wider rules on safety, noise and responsible use.
+* Contact [bookings@flaxbourtonhub.org](mailto:bookings@flaxbourtonhub.org) if your event layout depends on something not covered here.
