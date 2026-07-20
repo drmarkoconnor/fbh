@@ -10,13 +10,11 @@ showVenueUses: true
 ---
 Use the existing booking system for availability and reservations, then use this section for the practical guidance that helps you plan your event with confidence.
 
-
-
 Please note that booking requests are considered on a 'case by case' basis.  
 
 The Hub is situated within a residential area and, as such, larger capacity bookings may be best suited to community-focused events.  
 
-The Hub Trustees are always mindful of the neighbourhood, and its residents, who are likely to be affected by bookings at the hall.  
+The Hub Trustees are always mindful of the neighbourhood, and its residents, when considering the authorisation of bookings.
 
 <p><a class="button button--primary" href="/hire/availability/">Check availability</a></p>
 
