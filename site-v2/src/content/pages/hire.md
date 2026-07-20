@@ -1,9 +1,20 @@
 ---
-layout: layouts/page.njk
 title: Hire Information
+intro: >-
+  Plan your booking with clearer guidance on access, facilities, layout and the
+  key conditions before you confirm.
+
+
+  Please note that booking requests are considered on a 'case by case' basis.  
+
+
+  The Hub is situated within a residential area and, as such, larger capacity bookings may be best suited to community-focused events.  
+
+
+  The Hub Trustees are always mindful of the neighbourhood, and its residents, who are likely to be affected by bookings at the hall.  
+layout: layouts/page.njk
 permalink: /hire/
 sectionLabel: Hiring the Hub
-intro: Plan your booking with clearer guidance on access, facilities, layout and the key conditions before you confirm.
 pageHeroImage: /assets/images/hub-exterior.jpg
 showVenueUses: true
 ---
