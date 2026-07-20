@@ -1,25 +1,22 @@
 ---
 title: Hire Information
-intro: >-
-  Plan your booking with clearer guidance on access, facilities, layout and the
-  key conditions before you confirm.
-
-
-  Please note that booking requests are considered on a 'case by case' basis.  
-
-
-  The Hub is situated within a residential area and, as such, larger capacity bookings may be best suited to community-focused events.  
-
-
-  The Hub Trustees are always mindful of the neighbourhood, and its residents, who are likely to be affected by bookings at the hall.  
+intro: Plan your booking with clearer guidance on access, facilities, layout and
+  the key conditions before you confirm.
 layout: layouts/page.njk
 permalink: /hire/
 sectionLabel: Hiring the Hub
 pageHeroImage: /assets/images/hub-exterior.jpg
 showVenueUses: true
 ---
-
 Use the existing booking system for availability and reservations, then use this section for the practical guidance that helps you plan your event with confidence.
+
+
+
+Please note that booking requests are considered on a 'case by case' basis.  
+
+The Hub is situated within a residential area and, as such, larger capacity bookings may be best suited to community-focused events.  
+
+The Hub Trustees are always mindful of the neighbourhood, and its residents, who are likely to be affected by bookings at the hall.  
 
 <p><a class="button button--primary" href="/hire/availability/">Check availability</a></p>
 
@@ -54,28 +51,28 @@ Use the existing booking system for availability and reservations, then use this
 
 ## Venue highlights
 
-- Main hall capacity is currently stated as up to 200 people, or around 140 with tables and chairs in use.
-- A smaller meeting room is also available for meetings of up to 8 people.
-- A permanent sound and lighting setup is available in the hall.
-- Kitchen facilities are available, with extra crockery and storage access arranged in advance when needed.
-- The Hub aims to be welcoming and inclusive for the diverse local community.
+* Main hall capacity is currently stated as up to 200 people, or around 140 with tables and chairs in use.  Please note all bookings, especially larger capacity events, are considered on a 'case by case' basis.
+* A smaller meeting room is also available for meetings of up to 8 people.
+* A permanent sound and lighting setup is available in the hall.
+* Kitchen facilities are available, with extra crockery and storage access arranged in advance when needed.
+* The Hub aims to be welcoming and inclusive for the diverse local community.
 
 ## Important policy notes
 
-- The parish council does **not** permit the private hire of outdoor spaces around the Hub.
-- The football pitch is **not** available for family parties or informal overflow use. It is only available to properly organised sports teams registered with a sporting association, and then only for training or matches.
-- The external booking system remains the place to check availability and confirm reservations.
-- If your question is not answered online, contact the bookings address and the trustees can respond directly.
+* The parish council does **not** permit the private hire of outdoor spaces around the Hub.
+* The football pitch is **not** available for family parties or informal overflow use. It is only available to properly organised sports teams registered with a sporting association, and then only for training or matches.
+* The external booking system remains the place to check availability and confirm reservations.
+* If your question is not answered online, contact the bookings address and the trustees can respond directly.
 
 ## Documents and guidance
 
-- [Document centre](/documents/) for downloads and quick routes to the hire guidance pages.
-- [Access and arrival guide](/hire/access-and-arrival/) for key collection, heating and departure steps.
-- [Hall facilities and equipment](/hire/facilities-and-equipment/) for kitchen stock, chairs and tables.
-- [Layout and outdoor spaces](/hire/layout-and-outdoor-spaces/) for the building overview and outdoor-space policy.
-- [Terms and conditions of hire](/hire/terms-and-conditions/) for the main rules and responsibilities.
-- [Hall gallery](/hire/gallery/) for venue photos with links back to layouts, maps and equipment notes.
-- [Availability calendar](/hire/availability/) for the officially supported embedded calendar and direct links into the live booking system.
-- [Sound and lighting guide](/guides/) for stage setup basics.
-- [FAQs](/faqs/) for common practical questions.
-- Additional opening-up, security, invoicing and operations documents can be added into this structure as they are supplied.
+* [Document centre](/documents/) for downloads and quick routes to the hire guidance pages.
+* [Access and arrival guide](/hire/access-and-arrival/) for key collection, heating and departure steps.
+* [Hall facilities and equipment](/hire/facilities-and-equipment/) for kitchen stock, chairs and tables.
+* [Layout and outdoor spaces](/hire/layout-and-outdoor-spaces/) for the building overview and outdoor-space policy.
+* [Terms and conditions of hire](/hire/terms-and-conditions/) for the main rules and responsibilities.
+* [Hall gallery](/hire/gallery/) for venue photos with links back to layouts, maps and equipment notes.
+* [Availability calendar](/hire/availability/) for the officially supported embedded calendar and direct links into the live booking system.
+* [Sound and lighting guide](/guides/) for stage setup basics.
+* [FAQs](/faqs/) for common practical questions.
+* Additional opening-up, security, invoicing and operations documents can be added into this structure as they are supplied.
