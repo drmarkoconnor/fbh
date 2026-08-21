@@ -1,6 +1,6 @@
 ---
-title: We are imporving the facility
-summary: New Outside Toilet Facility for Sports Users
+title: We are improving the facility!
+summary: New Outside Toilet Facility for Sports Users Coming in September
 date: 2026-08-21
 image: /assets/images/uploads/umit-yildirim-9ob46apmbc4-unsplash.jpg
 ---
